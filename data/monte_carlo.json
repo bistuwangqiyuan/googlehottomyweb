@@ -1,0 +1,79 @@
+{
+  "generated_utc": "2026-07-14T07:53:30+00:00",
+  "n_sims": 10000,
+  "seed": 20260714,
+  "p_gate_pass": 0.6331,
+  "p_cash_ever_negative": 0.0215,
+  "p_cash_negative_given_pass": 0.034,
+  "arr_m36_usd": {
+    "p10": 0,
+    "p50": 1124267,
+    "p90": 3189388,
+    "p50_given_gate_pass": 1813510
+  },
+  "cash_m36_usd": {
+    "p10": 206790,
+    "p50": 945520,
+    "p90": 1140426
+  },
+  "cash_m36_given_gate_fail_usd": {
+    "p10": 960913,
+    "p50": 1001483,
+    "p90": 1065418
+  },
+  "cash_trough_usd": {
+    "p10": 206233,
+    "p50": 685494,
+    "p90": 1029933
+  },
+  "p_arr_m36_over_1m": 0.531,
+  "p_arr_m36_over_2m": 0.2712,
+  "p_cash_m36_over_initial": 0.0534,
+  "tornado_arr_m36": {
+    "base_case_arr": 2138031,
+    "sweeps": [
+      {
+        "param": "H18 SaaS增速",
+        "arr_low": 921529,
+        "arr_high": 4110887,
+        "span": 3189358
+      },
+      {
+        "param": "H12 单篇月PV",
+        "arr_low": 0,
+        "arr_high": 2138031,
+        "span": 2138031
+      },
+      {
+        "param": "RPM",
+        "arr_low": 0,
+        "arr_high": 2138031,
+        "span": 2138031
+      },
+      {
+        "param": "爬坡中点(月)",
+        "arr_low": 0,
+        "arr_high": 2138031,
+        "span": 2138031
+      },
+      {
+        "param": "SaaS首月新客",
+        "arr_low": 1240058,
+        "arr_high": 3239117,
+        "span": 1999059
+      },
+      {
+        "param": "H13 ARPU",
+        "arr_low": 1522537,
+        "arr_high": 2600191,
+        "span": 1077654
+      },
+      {
+        "param": "H15 月流失",
+        "arr_low": 1895003,
+        "arr_high": 2248643,
+        "span": 353640
+      }
+    ]
+  }
+}

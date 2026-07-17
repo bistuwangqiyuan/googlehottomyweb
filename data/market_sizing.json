@@ -1,0 +1,49 @@
+{
+  "generated_utc": "2026-07-14T07:50:54+00:00",
+  "assumptions": {
+    "seo_software_market_2025_usd": 85000000000.0,
+    "seo_software_cagr": 0.11,
+    "geo_tools_market_2025_usd": 850000000.0,
+    "geo_tools_cagr": 0.42,
+    "serviceable_share_of_seo_market": 0.12,
+    "serviceable_share_of_geo_market": 0.6,
+    "us_smb_total": 36200000.0,
+    "us_smb_paying_seo_share": 0.39,
+    "us_smb_avg_monthly_seo_spend": 497.0,
+    "global_agencies": 437000,
+    "agency_avg_monthly_retainer": 3209.0,
+    "agency_tool_spend_share": 0.1,
+    "pro_publishers_global": 900000,
+    "publisher_tool_budget_monthly": 100.0,
+    "target_geo_share": 0.47,
+    "reachable_segment_share": 0.35,
+    "som_share_y3_low": 0.001,
+    "som_share_y3_mid": 0.003,
+    "som_share_y3_high": 0.008
+  },
+  "top_down": {
+    "tam_2025_usd_b": 10.71,
+    "tam_2028_usd_b": 15.41,
+    "seo_market_2028_usd_b": 116.25,
+    "geo_market_2028_usd_b": 2.43
+  },
+  "bottom_up": {
+    "tam_usd_b": 86.96,
+    "segment_us_smb_usd_b": 84.2,
+    "segment_agencies_usd_b": 1.68,
+    "segment_publishers_usd_b": 1.08
+  },
+  "tam_conservative_usd_b": 10.71,
+  "sam_usd_b": 1.76,
+  "som_y3_usd_m": {
+    "low_y3": 1.8,
+    "mid_y3": 5.3,
+    "high_y3": 14.1
+  },
+  "sensitivity_h1_tam_topdown_usd_b": {
+    "8%": 7.31,
+    "12%": 10.71,
+    "16%": 14.11,
+    "20%": 17.51
+  }
+}

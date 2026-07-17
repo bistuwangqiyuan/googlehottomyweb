@@ -1,0 +1,59 @@
+{
+  "generated_utc": "2026-07-14T07:50:59+00:00",
+  "initial_cash_usd": 1500000,
+  "stage_gate": {
+    "month": 12,
+    "criteria": [
+      "G1: 组合月自然 PV >= 100,000（基准轨迹月12约170K的60%）",
+      "G2: 组合月收入 >= $1,500（基准轨迹月12约$2,554的60%）",
+      "G3: 近3个月组合PV月环比增速 >= 25%（确认在爬坡）"
+    ]
+  },
+  "scenarios": {
+    "conservative": {
+      "label": "保守（月12门槛未达标，止损收缩）",
+      "revenue_y1": 399,
+      "revenue_y2": 5188,
+      "revenue_y3": 8148,
+      "saas_customers_m36": 0.0,
+      "arr_m36": 0,
+      "portfolio_pv_m12": 17224,
+      "portfolio_rev_m12": 138,
+      "cash_m36": 1127315,
+      "cash_trough": 1127315,
+      "cash_trough_month": 36,
+      "runway_ok": true,
+      "first_cashflow_positive_month": null
+    },
+    "base": {
+      "label": "基准（门槛达标，月13上线 SaaS）",
+      "revenue_y1": 7492,
+      "revenue_y2": 341638,
+      "revenue_y3": 1480160,
+      "saas_customers_m36": 1799.7,
+      "arr_m36": 2138028,
+      "portfolio_pv_m12": 170254,
+      "portfolio_rev_m12": 2554,
+      "cash_m36": 375757,
+      "cash_trough": 347376,
+      "cash_trough_month": 33,
+      "runway_ok": true,
+      "first_cashflow_positive_month": 34
+    },
+    "optimistic": {
+      "label": "乐观（强产品市场匹配）",
+      "revenue_y1": 68955,
+      "revenue_y2": 1446525,
+      "revenue_y3": 6948985,
+      "saas_customers_m36": 9382.7,
+      "arr_m36": 11146680,
+      "portfolio_pv_m12": 923575,
+      "portfolio_rev_m12": 23089,
+      "cash_m36": 2278437,
+      "cash_trough": 880139,
+      "cash_trough_month": 19,
+      "runway_ok": true,
+      "first_cashflow_positive_month": 20
+    }
+  }
+}

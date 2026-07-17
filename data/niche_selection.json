@@ -1,0 +1,464 @@
+{
+  "generated_utc": "2026-07-14T07:51:00+00:00",
+  "weights": {
+    "rpm_score": 0.22,
+    "affiliate_score": 0.18,
+    "trend_supply": 0.18,
+    "aio_resilience": 0.16,
+    "competition_inv": 0.14,
+    "evergreen_ratio": 0.12
+  },
+  "hard_constraints": [
+    "YMYL 高危与公序良俗风险领域一票否决（个人理财建议、名人八卦被排除）",
+    "组合跨 >=6 个独立领域分散算法风险"
+  ],
+  "ranking": [
+    {
+      "id": "ai_saas_tools",
+      "label": "AI/SaaS 工具评测与对比",
+      "rpm_mid_usd": 23.5,
+      "weighted_total": 7.16,
+      "banned": false,
+      "detail": {
+        "rpm_score": {
+          "score": 7,
+          "rationale": "RPM $12-35 [S14]"
+        },
+        "affiliate_score": {
+          "score": 9,
+          "rationale": "SaaS 联盟佣金 20-70% 且经常性 [S17]"
+        },
+        "trend_supply": {
+          "score": 8,
+          "rationale": "新工具/模型发布高频（本项目一手经验：AI 赛道周更）"
+        },
+        "aio_resilience": {
+          "score": 8,
+          "rationale": "'X vs Y'对比查询是 AIO 引用主场 [S2]"
+        },
+        "competition_inv": {
+          "score": 4,
+          "rationale": "测评站增多但事实密度普遍低，有工艺差异化空间（H24）"
+        },
+        "evergreen_ratio": {
+          "score": 6,
+          "rationale": "工具迭代快但对比页可滚动更新（H25）"
+        }
+      }
+    },
+    {
+      "id": "consumer_tech",
+      "label": "消费电子/科技产品（对比评测）",
+      "rpm_mid_usd": 23.5,
+      "weighted_total": 7.1,
+      "banned": false,
+      "detail": {
+        "rpm_score": {
+          "score": 7,
+          "rationale": "RPM $12-35 区间 [S14]"
+        },
+        "affiliate_score": {
+          "score": 7,
+          "rationale": "产品联盟场景密集；Amazon 电子类佣金低(2-4%)但客单高 [S19]"
+        },
+        "trend_supply": {
+          "score": 9,
+          "rationale": "产品发布/泄露/评测热词高频（快照见 samsung/iphone 词条 [D1]）"
+        },
+        "aio_resilience": {
+          "score": 8,
+          "rationale": "对比类查询占比高，AIO 出现率 95% 但引用者获 2.3 倍点击 [S1][S2]"
+        },
+        "competition_inv": {
+          "score": 4,
+          "rationale": "评测站众多，但热词响应速度是差异化维度（H24）"
+        },
+        "evergreen_ratio": {
+          "score": 7,
+          "rationale": "评测/对比可持续更新为常青页（H25）"
+        }
+      }
+    },
+    {
+      "id": "home_energy_ev",
+      "label": "家庭能源/电动出行（太阳能、EV 配件、电价）",
+      "rpm_mid_usd": 16.0,
+      "weighted_total": 6.78,
+      "banned": false,
+      "detail": {
+        "rpm_score": {
+          "score": 6,
+          "rationale": "估计 $10-22（H26，介于家居/科技类目之间）"
+        },
+        "affiliate_score": {
+          "score": 7,
+          "rationale": "高客单（充电桩/储能）联盟"
+        },
+        "trend_supply": {
+          "score": 7,
+          "rationale": "政策补贴/新车发布/电价事件（H23）"
+        },
+        "aio_resilience": {
+          "score": 7,
+          "rationale": "计算器/对比工具类内容 AI 难替代"
+        },
+        "competition_inv": {
+          "score": 7,
+          "rationale": "垂直玩家少，成长期领域（H24）"
+        },
+        "evergreen_ratio": {
+          "score": 7,
+          "rationale": "指南可常青（H25）"
+        }
+      }
+    },
+    {
+      "id": "travel_deals",
+      "label": "旅行目的地/装备（事件驱动：签证政策、航线、装备）",
+      "rpm_mid_usd": 12.0,
+      "weighted_total": 6.28,
+      "banned": false,
+      "detail": {
+        "rpm_score": {
+          "score": 5,
+          "rationale": "RPM $6-18，Q4 有旺季溢价 [S14]"
+        },
+        "affiliate_score": {
+          "score": 7,
+          "rationale": "酒店/保险/装备联盟丰富，旅行类联盟月收入锚点高 [S17]"
+        },
+        "trend_supply": {
+          "score": 7,
+          "rationale": "政策/事件/季节热词稳定（H23）"
+        },
+        "aio_resilience": {
+          "score": 7,
+          "rationale": "行程规划长尾+装备对比交易意图"
+        },
+        "competition_inv": {
+          "score": 5,
+          "rationale": "OTA 与大博主竞争（H24）"
+        },
+        "evergreen_ratio": {
+          "score": 7,
+          "rationale": "目的地指南可常青（H25）"
+        }
+      }
+    },
+    {
+      "id": "home_garden",
+      "label": "家居/园艺/DIY",
+      "rpm_mid_usd": 11.5,
+      "weighted_total": 6.18,
+      "banned": false,
+      "detail": {
+        "rpm_score": {
+          "score": 5,
+          "rationale": "RPM $7-16 [S14]"
+        },
+        "affiliate_score": {
+          "score": 7,
+          "rationale": "工具/家居用品联盟丰富，Amazon 家居 3% [S19]"
+        },
+        "trend_supply": {
+          "score": 5,
+          "rationale": "季节性强，事件驱动中等（H23）"
+        },
+        "aio_resilience": {
+          "score": 7,
+          "rationale": "how-to+产品对比混合，交易意图占比较高"
+        },
+        "competition_inv": {
+          "score": 6,
+          "rationale": "中等竞争（H24）"
+        },
+        "evergreen_ratio": {
+          "score": 8,
+          "rationale": "how-to 内容长寿（H25）"
+        }
+      }
+    },
+    {
+      "id": "food_recipes",
+      "label": "食谱/厨房电器（节庆与热点食谱）",
+      "rpm_mid_usd": 14.0,
+      "weighted_total": 5.94,
+      "banned": false,
+      "detail": {
+        "rpm_score": {
+          "score": 6,
+          "rationale": "RPM $8-20，Mediavine 最强类目 [S14][S5:organicarbitrage]"
+        },
+        "affiliate_score": {
+          "score": 6,
+          "rationale": "厨电/食材配送联盟 [S14]"
+        },
+        "trend_supply": {
+          "score": 6,
+          "rationale": "节庆/病毒食谱周期性（H23）"
+        },
+        "aio_resilience": {
+          "score": 6,
+          "rationale": "食谱结构化易被 AIO 消化，但完整步骤仍引点击"
+        },
+        "competition_inv": {
+          "score": 3,
+          "rationale": "食谱站红海（H24）"
+        },
+        "evergreen_ratio": {
+          "score": 9,
+          "rationale": "经典食谱常青（H25）"
+        }
+      }
+    },
+    {
+      "id": "pets",
+      "label": "宠物用品/养护",
+      "rpm_mid_usd": 9.5,
+      "weighted_total": 5.62,
+      "banned": false,
+      "detail": {
+        "rpm_score": {
+          "score": 4,
+          "rationale": "RPM $5-14 [S14]"
+        },
+        "affiliate_score": {
+          "score": 7,
+          "rationale": "宠物食品/保险联盟活跃 [S14]"
+        },
+        "trend_supply": {
+          "score": 4,
+          "rationale": "事件驱动热词较少（H23）"
+        },
+        "aio_resilience": {
+          "score": 6,
+          "rationale": "产品对比+养护 how-to 混合"
+        },
+        "competition_inv": {
+          "score": 6,
+          "rationale": "中等（H24）"
+        },
+        "evergreen_ratio": {
+          "score": 8,
+          "rationale": "养护内容长寿（H25）"
+        }
+      }
+    },
+    {
+      "id": "gaming_guides",
+      "label": "游戏攻略/发售追踪",
+      "rpm_mid_usd": 4.0,
+      "weighted_total": 5.24,
+      "banned": false,
+      "detail": {
+        "rpm_score": {
+          "score": 2,
+          "rationale": "RPM $2-6 低且广告拦截率 15-35% [S16][S5:organicarbitrage]"
+        },
+        "affiliate_score": {
+          "score": 5,
+          "rationale": "游戏/外设联盟中等"
+        },
+        "trend_supply": {
+          "score": 9,
+          "rationale": "版本更新/发售事件高频（H23）"
+        },
+        "aio_resilience": {
+          "score": 7,
+          "rationale": "攻略长查询 AI 难完整作答，点击留存较好（H25 推测）"
+        },
+        "competition_inv": {
+          "score": 4,
+          "rationale": "大型攻略站盘踞（H24）"
+        },
+        "evergreen_ratio": {
+          "score": 5,
+          "rationale": "版本迭代快（H25）"
+        }
+      }
+    },
+    {
+      "id": "entertainment_streaming",
+      "label": "影视/流媒体指南（上映日历、平台指南）",
+      "rpm_mid_usd": 5.0,
+      "weighted_total": 5.1,
+      "banned": false,
+      "detail": {
+        "rpm_score": {
+          "score": 2,
+          "rationale": "RPM $3-7 低 [S16]"
+        },
+        "affiliate_score": {
+          "score": 4,
+          "rationale": "流媒体订阅联盟有限"
+        },
+        "trend_supply": {
+          "score": 10,
+          "rationale": "热词供给全场最高（快照娱乐词条占比最大 [D1]）"
+        },
+        "aio_resilience": {
+          "score": 6,
+          "rationale": "'哪里能看X'类查询意图明确"
+        },
+        "competition_inv": {
+          "score": 5,
+          "rationale": "热词响应速度可差异化（H24）"
+        },
+        "evergreen_ratio": {
+          "score": 4,
+          "rationale": "时效性强，常青化率低（H25）"
+        }
+      }
+    },
+    {
+      "id": "sports_events",
+      "label": "体育赛事数据/日程（不涉博彩）",
+      "rpm_mid_usd": 5.5,
+      "weighted_total": 4.58,
+      "banned": false,
+      "detail": {
+        "rpm_score": {
+          "score": 3,
+          "rationale": "RPM $3-8 [S16]"
+        },
+        "affiliate_score": {
+          "score": 3,
+          "rationale": "变现路径窄（装备联盟弱、坚决不做博彩）"
+        },
+        "trend_supply": {
+          "score": 10,
+          "rationale": "赛事热词全年高频 [D1]"
+        },
+        "aio_resilience": {
+          "score": 5,
+          "rationale": "比分/日程类易被 AIO 直接回答"
+        },
+        "competition_inv": {
+          "score": 3,
+          "rationale": "ESPN 级巨头盘踞（H24）"
+        },
+        "evergreen_ratio": {
+          "score": 3,
+          "rationale": "强时效（H25）"
+        }
+      }
+    },
+    {
+      "id": "personal_finance_info",
+      "label": "个人理财（仅资讯/工具对比，不做投资建议）",
+      "rpm_mid_usd": 27.5,
+      "weighted_total": 6.6,
+      "banned": true,
+      "detail": {
+        "rpm_score": {
+          "score": 9,
+          "rationale": "RPM $15-40 全场最高 [S14]"
+        },
+        "affiliate_score": {
+          "score": 9,
+          "rationale": "金融线索单价极高 [S19]"
+        },
+        "trend_supply": {
+          "score": 6,
+          "rationale": "政策/利率事件驱动（H23）"
+        },
+        "aio_resilience": {
+          "score": 5,
+          "rationale": "YMYL 领域 AIO 引用需自然前 10 [S32]，新站难"
+        },
+        "competition_inv": {
+          "score": 2,
+          "rationale": "银行/大媒体盘踞（H24）"
+        },
+        "evergreen_ratio": {
+          "score": 7,
+          "rationale": "工具对比可常青（H25）"
+        }
+      }
+    },
+    {
+      "id": "celebrity_gossip",
+      "label": "名人八卦",
+      "rpm_mid_usd": 5.0,
+      "weighted_total": 3.9,
+      "banned": true,
+      "detail": {
+        "rpm_score": {
+          "score": 2,
+          "rationale": "RPM $3-7 [S16]"
+        },
+        "affiliate_score": {
+          "score": 2,
+          "rationale": "几乎无联盟场景"
+        },
+        "trend_supply": {
+          "score": 10,
+          "rationale": "热词供给最高 [D1]"
+        },
+        "aio_resilience": {
+          "score": 4,
+          "rationale": "事实型八卦被 AIO 直接消化"
+        },
+        "competition_inv": {
+          "score": 3,
+          "rationale": "TMZ 级巨头（H24）"
+        },
+        "evergreen_ratio": {
+          "score": 2,
+          "rationale": "强时效（H25）"
+        }
+      }
+    }
+  ],
+  "recommended_portfolio_base8": [
+    {
+      "rank": 1,
+      "id": "ai_saas_tools",
+      "label": "AI/SaaS 工具评测与对比",
+      "score": 7.16
+    },
+    {
+      "rank": 2,
+      "id": "consumer_tech",
+      "label": "消费电子/科技产品（对比评测）",
+      "score": 7.1
+    },
+    {
+      "rank": 3,
+      "id": "home_energy_ev",
+      "label": "家庭能源/电动出行（太阳能、EV 配件、电价）",
+      "score": 6.78
+    },
+    {
+      "rank": 4,
+      "id": "travel_deals",
+      "label": "旅行目的地/装备（事件驱动：签证政策、航线、装备）",
+      "score": 6.28
+    },
+    {
+      "rank": 5,
+      "id": "home_garden",
+      "label": "家居/园艺/DIY",
+      "score": 6.18
+    },
+    {
+      "rank": 6,
+      "id": "food_recipes",
+      "label": "食谱/厨房电器（节庆与热点食谱）",
+      "score": 5.94
+    },
+    {
+      "rank": 7,
+      "id": "pets",
+      "label": "宠物用品/养护",
+      "score": 5.62
+    },
+    {
+      "rank": 8,
+      "id": "gaming_guides",
+      "label": "游戏攻略/发售追踪",
+      "score": 5.24
+    }
+  ],
+  "portfolio_note": "开站顺序=评分序：前 4 站（月1-4）取 Top4，验证信号最强的领域先行；月 5-8 补齐 5-8 名，保持领域独立性。组合加权平均 RPM（按评分排名前8站均权）=14.2 美元/千次，与财务模型基准 RPM=15 假设一致性核对用。"
+}

@@ -1,0 +1,141 @@
+{
+  "generated_utc": "2026-07-14T07:50:58+00:00",
+  "article_cost": {
+    "budget": {
+      "llm_usd": 0.012,
+      "editor_usd": 7.5,
+      "misc_usd": 0.5,
+      "total_usd": 8.01
+    },
+    "mid": {
+      "llm_usd": 0.405,
+      "editor_usd": 7.5,
+      "misc_usd": 0.5,
+      "total_usd": 8.41
+    }
+  },
+  "assumptions_note": "H7-H16 为经营假设，来源锚点见脚本内注释与 SOURCES.md",
+  "site_scenarios": {
+    "conservative": {
+      "params": {
+        "mature_pv_per_article": 40,
+        "rpm": 8.0,
+        "ramp_mid": 14,
+        "ramp_k": 0.35
+      },
+      "monthly_breakeven_month": 29,
+      "cumulative_breakeven_month": null,
+      "month12": {
+        "month": 12,
+        "articles_stock": 720,
+        "monthly_pv": 9556,
+        "revenue": 76.45,
+        "cost": 540.6,
+        "profit": -464.15,
+        "cum_profit": -6250.24
+      },
+      "month24": {
+        "month": 24,
+        "articles_stock": 1440,
+        "monthly_pv": 55912,
+        "revenue": 447.29,
+        "cost": 540.6,
+        "profit": -93.31,
+        "cum_profit": -9313.62
+      },
+      "month36": {
+        "month": 36,
+        "articles_stock": 2160,
+        "monthly_pv": 86361,
+        "revenue": 690.89,
+        "cost": 540.6,
+        "profit": 150.29,
+        "cum_profit": -8810.25
+      }
+    },
+    "base": {
+      "params": {
+        "mature_pv_per_article": 120,
+        "rpm": 15.0,
+        "ramp_mid": 11,
+        "ramp_k": 0.4
+      },
+      "monthly_breakeven_month": 11,
+      "cumulative_breakeven_month": 17,
+      "month12": {
+        "month": 12,
+        "articles_stock": 720,
+        "monthly_pv": 51727,
+        "revenue": 775.9,
+        "cost": 540.6,
+        "profit": 235.3,
+        "cum_profit": -3888.25
+      },
+      "month24": {
+        "month": 24,
+        "articles_stock": 1440,
+        "monthly_pv": 171852,
+        "revenue": 2577.78,
+        "cost": 540.6,
+        "profit": 2037.18,
+        "cum_profit": 11831.1
+      },
+      "month36": {
+        "month": 36,
+        "articles_stock": 2160,
+        "monthly_pv": 259188,
+        "revenue": 3887.82,
+        "cost": 540.6,
+        "profit": 3347.22,
+        "cum_profit": 44839.61
+      }
+    },
+    "optimistic": {
+      "params": {
+        "mature_pv_per_article": 300,
+        "rpm": 25.0,
+        "ramp_mid": 9,
+        "ramp_k": 0.45
+      },
+      "monthly_breakeven_month": 6,
+      "cumulative_breakeven_month": 9,
+      "month12": {
+        "month": 12,
+        "articles_stock": 720,
+        "monthly_pv": 171532,
+        "revenue": 4288.3,
+        "cost": 540.6,
+        "profit": 3747.7,
+        "cum_profit": 9585.99
+      },
+      "month24": {
+        "month": 24,
+        "articles_stock": 1440,
+        "monthly_pv": 431495,
+        "revenue": 10787.37,
+        "cost": 540.6,
+        "profit": 10246.77,
+        "cum_profit": 100245.4
+      },
+      "month36": {
+        "month": 36,
+        "articles_stock": 2160,
+        "monthly_pv": 647997,
+        "revenue": 16199.91,
+        "cost": 540.6,
+        "profit": 15659.31,
+        "cum_profit": 258433.57
+      }
+    }
+  },
+  "saas_unit_economics": {
+    "arpu_monthly": 99.0,
+    "gross_margin": 0.78,
+    "monthly_churn": 0.045,
+    "cac": 350.0,
+    "expected_lifetime_months": 22.2,
+    "ltv_usd": 1716.0,
+    "ltv_cac_ratio": 4.9,
+    "cac_payback_months": 4.5
+  }
+}
