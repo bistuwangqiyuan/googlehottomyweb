@@ -94,5 +94,7 @@ python scripts/11_verify_doc_consistency.py    # 文档数字逐条核对
 | E2E 2 | `--run-pipeline` 真实抓取（80 条热词→发布 6 篇新内容）+ 全套断言 | 151/151 通过 |
 | 部署 | `deploy.ps1` 真实部署 Vercel 生产（含 ADMIN_USER/ADMIN_PASS 环境变量注入） | Ready |
 | E2E 3 | **https://trendflow-site.vercel.app 真实线上** 同一套断言 | **151/151 通过** |
+| 闭环 | Vercel 项目已连接 GitHub 仓库（rootDirectory=site）；再跑一轮真实流水线（新发 3 篇）→ git push → Vercel 自动构建 → 新内容页线上 200 | **通过**（无人干预全链闭环） |
+| E2E 4 | 自动部署后线上最终回归（14 篇内容） | **187/187 通过** |
 
 断言覆盖：首页/全部内容页 200 且响应 <2s、Article/FAQPage JSON-LD 合法且含 headline/日期/citation、AI 披露块、具名来源、canonical、og:title、sitemap 全部 loc 可达且 host 一致、robots（Sitemap + Disallow /admin）、RSS 合法、/admin 未认证 401/503 且真实凭据 200、全站无死链、未知 slug 404。
