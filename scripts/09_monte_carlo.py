@@ -15,7 +15,8 @@
   H18 SaaS月增速   三角(0.04, 0.12, 0.18)      内容驱动获客的增长带（经营假设）
   SaaS首月新客     三角(8, 20, 35)             waitlist 转化的不确定性（经营假设）
 
-阶段门槛（同 06）：月12 组合PV>=100K 且 月收入>=$1,500 → 上SaaS；否则止损收缩。
+阶段门槛（同 06，三条准则全部满足）：月12 组合PV>=100K（G1）且 月收入>=$1,500（G2）
+且 近3个月组合PV月环比增速（几何平均）>=25%（G3）→ 上SaaS；否则止损收缩。
 
 产出：
     data/monte_carlo.json        概率结论（供财务章/成功概率章引用）
@@ -43,7 +44,11 @@ SEED = 20260714  # 固定种子保证可复现
 
 # --- 与 06 号模型一致的常量 ---
 ARTICLES_PER_MONTH = 60
-ARTICLE_COST = 8.01
+# 与 06 一致：单篇成本读取 05 号脚本输出，消除手工抄数
+_UNIT_ECON_PATH = DATA / "unit_economics.json"
+if not _UNIT_ECON_PATH.exists():
+    sys.exit("缺少 data/unit_economics.json，请先运行 scripts/05_unit_economics.py")
+ARTICLE_COST = json.loads(_UNIT_ECON_PATH.read_text(encoding="utf-8"))["article_cost"]["budget"]["total_usd"]
 SITE_FIXED_MONTHLY = 60.0
 SITES_PLAN = [1, 2, 3, 4, 5, 6, 7, 8, 8, 8, 8, 8]        # 基准开站计划
 SAAS_GM = 0.78
@@ -56,6 +61,7 @@ PAYROLL_WINDDOWN = 4_000
 INFRA_WINDDOWN = 800
 GATE_PV = 100_000
 GATE_REV = 1_500
+GATE_GROWTH = 0.25   # G3：月9->12 组合PV几何平均环比增速阈值（同 06）
 
 
 def logistic(t, mid, k=0.40):
@@ -70,6 +76,7 @@ def simulate(pv_art, rpm, ramp_mid, arpu, churn, growth, m1_customers) -> dict:
     gate_passed = None
     cash_min = cash
     arr_m36 = rev_m12 = pv_m12 = 0.0
+    pv_history = []
     for m in range(1, MONTHS + 1):
         winddown = gate_passed is False and m > GATE_MONTH
         if m <= len(SITES_PLAN):
@@ -89,10 +96,17 @@ def simulate(pv_art, rpm, ramp_mid, arpu, churn, growth, m1_customers) -> dict:
         content_cost = len(sites) * ARTICLES_PER_MONTH * ARTICLE_COST if producing else 0.0
         portfolio_cost = content_cost + len(sites) * SITE_FIXED_MONTHLY
 
+        pv_history.append(portfolio_pv)
         if m == GATE_MONTH:
             # 注意 bool()：portfolio_pv 可能是 np.float64，比较结果为 np.bool_，
             # 与 `is True/False` 判断不兼容，必须转为 Python bool
-            gate_passed = bool(portfolio_pv >= GATE_PV) and bool(portfolio_rev >= GATE_REV)
+            pv_m9 = pv_history[GATE_MONTH - 4]
+            growth_3m = (portfolio_pv / pv_m9) ** (1 / 3) - 1 if pv_m9 > 0 else 0.0
+            gate_passed = (
+                bool(portfolio_pv >= GATE_PV)
+                and bool(portfolio_rev >= GATE_REV)
+                and bool(growth_3m >= GATE_GROWTH)   # G3（同 06）
+            )
             pv_m12, rev_m12 = float(portfolio_pv), float(portfolio_rev)
 
         saas_rev = saas_cost = 0.0
@@ -178,7 +192,7 @@ def main() -> None:
 
     # ---------------- 龙卷风图：单参数 P10/P90 扫描（其余取中位） ----------------
     med = {
-        "pv_art": 120.0, "rpm": 15.0 + (8 + 25 - 2 * 15) / 3 * 0,  # 三角分布中位近似取众数 15
+        "pv_art": 120.0, "rpm": 15.0,  # 三角(8,15,25) 中位近似取众数 15
         "ramp_mid": 11.5, "arpu": 99.0, "churn": 0.045, "growth": 0.12, "m1c": 20.0,
     }
     sweeps = {
@@ -214,7 +228,7 @@ def main() -> None:
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
-    plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "DejaVu Sans"]
+    plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "Noto Sans CJK SC", "PingFang SC", "DejaVu Sans"]
     plt.rcParams["axes.unicode_minus"] = False
 
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(13.5, 5))

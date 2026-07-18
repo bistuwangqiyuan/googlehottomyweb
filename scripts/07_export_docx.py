@@ -12,6 +12,7 @@
 """
 import base64
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -78,7 +79,7 @@ def main() -> None:
         "docx",
         outputfile=str(OUT),
         extra_args=[
-            f"--resource-path={SRC.parent};{ROOT}",
+            f"--resource-path={SRC.parent}{os.pathsep}{ROOT}",
             "--toc",
             "--toc-depth=2",
             "--metadata", f"title={TITLE}",

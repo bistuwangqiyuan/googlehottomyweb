@@ -1,25 +1,27 @@
 {
-  "generated_utc": "2026-07-14T05:45:15+00:00",
+  "generated_utc": "2026-07-18T08:25:28+00:00",
   "method": "en.wikipedia top-50 on 12 monthly sample days in 2025; spike = peak/baseline >= 5",
-  "n_candidates": 298,
-  "n_spikes": 278,
-  "spike_share_of_top50": 0.9329,
+  "n_dedup_articles": 507,
+  "n_fetch_failures": 0,
+  "n_candidates": 474,
+  "n_spikes": 448,
+  "spike_share_of_top50": 0.9451,
   "half_life_days": {
     "median": 2,
     "p25": 1,
     "p75": 3,
-    "n": 275
+    "n": 444
   },
   "decay_to_10pct_days": {
-    "median": 4,
+    "median": 5,
     "p25": 3,
-    "p75": 15,
-    "n": 273
+    "p75": 16,
+    "n": 438
   },
   "first3day_share_of_30d_excess": {
-    "median": 0.6484,
-    "p25": 0.3473,
+    "median": 0.6437,
+    "p25": 0.3451,
     "p75": 0.8046,
-    "n": 278
+    "n": 448
   }
 }

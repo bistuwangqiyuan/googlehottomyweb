@@ -20,6 +20,8 @@ sys.stdout.reconfigure(encoding="utf-8")
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 ASSETS = ROOT / "assets"
+DATA.mkdir(exist_ok=True)
+ASSETS.mkdir(exist_ok=True)
 
 # 权重（合计 1.0）。设计原则：合规风险与自动化可行性是本项目的两大主要矛盾，
 # 各占 0.18；市场规模/增速合计 0.24；其余为次要矛盾。
@@ -151,7 +153,7 @@ def main() -> None:
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
-    plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "DejaVu Sans"]
+    plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "Noto Sans CJK SC", "PingFang SC", "DejaVu Sans"]
     plt.rcParams["axes.unicode_minus"] = False
 
     fig, ax = plt.subplots(figsize=(10, 5.5))

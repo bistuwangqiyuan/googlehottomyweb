@@ -10,9 +10,12 @@
 准则与权重：
   rpm_score        0.22  展示广告 RPM 区间中值 [S14][S15]
   affiliate_score  0.18  联盟变现潜力（佣金率×转化场景丰富度）[S17][S19]
-  trend_supply     0.18  热词供给密度（该领域事件驱动热词的出现频率，
-                         依据 data/trending_now.csv 快照类目分布 + lifecycle 样本，
-                         辅以定性判断，标注 H23）
+  trend_supply     0.18  热词供给密度（该领域事件驱动热词的出现频率）。
+                         本项为专家判断分（标注 H23），锚点为 [D1] 快照
+                         （data/trending_now.csv，脚本运行时读取并把快照统计
+                         写入输出 JSON 作为审计锚点）+ lifecycle 样本的定性观察；
+                         快照仅 80 条热词，不足以支撑逐领域的统计分布，
+                         故如实按"有数据锚点的专家打分"处理，不伪称统计推断。
   aio_resilience   0.16  AIO 冲击韧性：交易/对比类查询占比高者得分高 [S1][S2]
   competition_inv  0.14  竞争强度反向分（大众领域低分，标注 H24 推测）
   evergreen_ratio  0.12  热点内容可常青化比例（延长资产寿命，标注 H25 推测）
@@ -21,6 +24,7 @@
     data/niche_selection.json
     assets/niche_scores.png
 """
+import csv
 import json
 import sys
 from datetime import datetime, timezone
@@ -31,6 +35,28 @@ sys.stdout.reconfigure(encoding="utf-8")
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 ASSETS = ROOT / "assets"
+DATA.mkdir(exist_ok=True)
+ASSETS.mkdir(exist_ok=True)
+
+
+def load_trend_snapshot_evidence() -> dict:
+    """读取 [D1] 热词快照（data/trending_now.csv），返回 trend_supply 打分的审计锚点统计。"""
+    path = DATA / "trending_now.csv"
+    if not path.exists():
+        return {"snapshot_file": "data/trending_now.csv", "available": False,
+                "note": "快照缺失：请先运行 scripts/01_fetch_trending_now.py；trend_supply 为专家判断分（H23）"}
+    with path.open(encoding="utf-8-sig") as f:
+        rows = list(csv.DictReader(f))
+    geos = sorted({r["geo"] for r in rows})
+    return {
+        "snapshot_file": "data/trending_now.csv",
+        "available": True,
+        "n_terms": len(rows),
+        "geos": geos,
+        "snapshot_utc": rows[0]["snapshot_utc"] if rows else None,
+        "note": ("trend_supply 为专家判断分（H23），以本快照与 lifecycle 样本为定性锚点；"
+                 "样本量（80 条）不足以做逐领域统计分布，故不伪称统计推断"),
+    }
 
 WEIGHTS = {
     "rpm_score": 0.22,
@@ -223,6 +249,7 @@ def main() -> None:
     out = {
         "generated_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "weights": WEIGHTS,
+        "trend_supply_evidence": load_trend_snapshot_evidence(),
         "hard_constraints": [
             "YMYL 高危与公序良俗风险领域一票否决（个人理财建议、名人八卦被排除）",
             "组合跨 >=6 个独立领域分散算法风险",
@@ -247,7 +274,7 @@ def main() -> None:
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
-    plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "DejaVu Sans"]
+    plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "Noto Sans CJK SC", "PingFang SC", "DejaVu Sans"]
     plt.rcParams["axes.unicode_minus"] = False
 
     fig, ax = plt.subplots(figsize=(11, 6.5))

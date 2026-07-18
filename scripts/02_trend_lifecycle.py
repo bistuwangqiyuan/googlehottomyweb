@@ -46,7 +46,10 @@ DATA.mkdir(exist_ok=True)
 ASSETS.mkdir(exist_ok=True)
 
 API = "https://wikimedia.org/api/rest_v1/metrics/pageviews"
-UA = {"User-Agent": "trend-lifecycle-research/1.0 (reproducible business research)"}
+# Wikimedia User-Agent 政策要求 UA 内含联系方式（URL 或邮箱），否则返回 403。
+# 复现者请按 https://foundation.wikimedia.org/wiki/Policy:User-Agent_policy
+# 将下方占位 URL 替换为自己的联系方式（example.org 为 IANA 保留的占位域名）。
+UA = {"User-Agent": "trend-lifecycle-research/1.0 (reproducible business research; contact: see project README; https://example.org)"}
 
 SAMPLE_DATES = [date(2025, m, 15) for m in range(1, 13)]
 TOP_N = 50
@@ -60,7 +63,10 @@ META_PREFIXES = (
 )
 
 
-def get_json(url: str, retries: int = 3) -> dict | None:
+FETCH_FAILURES = {"count": 0}  # 非 404 的抓取失败计数（重试耗尽），用于样本损耗审计
+
+
+def get_json(url: str, retries: int = 5) -> dict | None:
     for i in range(retries):
         try:
             r = requests.get(url, headers=UA, timeout=30)
@@ -71,6 +77,7 @@ def get_json(url: str, retries: int = 3) -> dict | None:
             time.sleep(2 * (i + 1))
         except requests.RequestException:
             time.sleep(2 * (i + 1))
+    FETCH_FAILURES["count"] += 1
     return None
 
 
@@ -213,6 +220,8 @@ def main() -> None:
     summary = {
         "generated_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "method": "en.wikipedia top-50 on 12 monthly sample days in 2025; spike = peak/baseline >= 5",
+        "n_dedup_articles": len(candidates),
+        "n_fetch_failures": FETCH_FAILURES["count"],
         "n_candidates": len(all_recs),
         "n_spikes": len(spikes),
         "spike_share_of_top50": round(len(spikes) / max(len(all_recs), 1), 4),

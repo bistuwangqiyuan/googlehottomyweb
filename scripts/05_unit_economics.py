@@ -149,7 +149,7 @@ def main() -> None:
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
-    plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "DejaVu Sans"]
+    plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "Noto Sans CJK SC", "PingFang SC", "DejaVu Sans"]
     plt.rcParams["axes.unicode_minus"] = False
 
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(13, 5))
