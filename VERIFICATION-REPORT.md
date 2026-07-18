@@ -50,3 +50,49 @@ python scripts/11_verify_doc_consistency.py    # 文档数字逐条核对
 - 02 号 Wikimedia per-article 端点的单篇数据可用性存在小幅时点波动（多次运行有效候选数 435–474），分布统计（中位数/四分位）在所有运行中完全一致；验证标准据此如实定为"分布统计精确一致 + 样本量 ±15%"。
 - 复现 02 号时需按 Wikimedia UA 政策在脚本内填入自己的联系方式（脚本注释已说明）。
 - 蒙特卡洛模型量化的是模型内 7 参数的联合不确定性；模型外风险（平台政策突变等）在计划书第十章、第十三章文字部分披露，不在概率数字内。
+
+---
+
+# 第二部分：TrendFlow 阶段一首站——开发、上线与真实生产环境测试
+
+**日期**：2026-07-18 ｜ **范围**：按商业计划书阶段一方案（03 章产品技术、12 章前 90 天）实现首站 MVP 并上线 Vercel 真实生产环境。
+
+## 一、结论
+
+**已上线且真实生产环境测试全绿。** 生产地址：**https://trendflow-site.vercel.app**（Vercel 生产部署，状态 Ready）。同一套 E2E 断言在本地生产模式与真实线上 URL 各跑一遍，均 **151/151 通过，退出码 0**；流水线单元测试 **18/18 通过**。
+
+| 验收标准（计划书定义） | 结果 |
+|---|---|
+| 1. 本地生产模式 E2E 全绿（20 轮内收敛） | **通过**（第 1 轮即全绿：91 项；补真实抓取后第 2 轮 151 项全绿） |
+| 2. 流水线无人干预下从真实 RSS 产出 ≥3 篇过审内容 | **通过**（两轮真实抓取共发布 11 篇，每篇 3 条具名来源，审核关口全记录在审计日志） |
+| 3. 部署/域名脚本 dry-run 通过、真实核价 <$2 | **通过**（`deploy.ps1 -DryRun` 退出码 0；Porkbun 公开定价 API 实测 .bond $1.34/.sbs $1.54/.click $1.54/.top $1.63 首年，1.111B 数字 .xyz $0.99 含续费） |
+| 4. 真实 URL 上同一套测试全绿 | **通过**（https://trendflow-site.vercel.app 上 151/151，含 /admin Basic Auth 真实凭据验证） |
+
+## 二、交付物清单
+
+| 组件 | 路径 | 说明 |
+|---|---|---|
+| 内容流水线 | `pipeline/` | 抓取（8 国 RSS）→ 机会过滤（C1-C5 合规黑名单+去重+意图评分）→ 生成（简报/LLM 双模式）→ 审核关口（规则 + LLM 模式下第二模型独立审核，fail-closed）→ 发布 |
+| 定时任务 | `.github/workflows/content-pipeline.yml` | GitHub Actions 每 6 小时全链运行并自动提交，Vercel 检测推送自动部署 |
+| 站点 | `site/` | Next.js 15（App Router、静态生成）：首页、简报页（Article+FAQPage JSON-LD、具名来源、AI 披露块）、编辑政策/隐私、sitemap/robots/RSS/canonical/OG、`/admin` 抽检后台（Basic Auth，未配凭据 fail-closed） |
+| 测试 | `tests/test_pipeline_unit.py`（18 项）、`tests/e2e_site.py`（151 项断言，`--base-url` 本地/线上同一套） | 均退出码 0 |
+| 上线自动化 | `deploy/deploy.ps1`、`deploy/register_domain.py` | 一键部署；域名脚本含 checkDomain 实时核价（>$2 拒绝）、`dryRun` 全预检不扣费、DNS 配置、Vercel API 绑定 |
+| 人工接入清单 | `GO-LIVE-CHECKLIST.md` | 仅剩 2 项人工步骤（Porkbun 充值+API key、可选 LLM key），Vercel 登录已完成 |
+
+## 三、诚实边界（与计划书承诺一致）
+
+- **内容模式**：当前未配置 LLM key，流水线以**简报模式**运行——确定性模板只复述 RSS 内可验证事实（热词、Google 公布的搜索量下界、具名新闻标题+链接、时间线），零生成式文本、零编造；每篇页面的披露块如实标注生成方式与审核分。配置 key 后自动切换 AI 成稿 + 第二模型独立审核（llm 模式内容在无审核模型时 fail-closed 拒发，已有单元测试覆盖）。
+- **域名**：注册需 Porkbun 账户充值（真实付款），是仅剩的人工环节；脚本已通过真实 API 核实预算可行（<$2/年）并支持 `--dry-run` 全预检。当前生产环境使用 Vercel 免费域名 trendflow-site.vercel.app，绑定自有域名后重跑 `python tests/e2e_site.py --base-url https://<域名>` 即完成闭环。
+- **审核关口的定位**：简报模式内容为确定性模板（输入即事实），规则审核（来源完整性、结构、长度、黑名单复查、数字落地）即可闭环；"第二模型独立审核"作用于存在编造风险的 LLM 成稿模式。`/admin` 后台提供人工抽检与一键下架（直达 GitHub 删除页，git 全程留痕），对应计划书"编辑监督"要求。
+
+## 四、真实生产环境测试记录
+
+| 轮次 | 内容 | 结果 |
+|---|---|---|
+| 单元 1 | `tests/test_pipeline_unit.py`（黑名单/去重/容量/审核关口/离线全链路） | 18/18 通过 |
+| E2E 1 | 本地生产模式（next build + next start），已有 5 篇真实内容 | 91/91 通过 |
+| E2E 2 | `--run-pipeline` 真实抓取（80 条热词→发布 6 篇新内容）+ 全套断言 | 151/151 通过 |
+| 部署 | `deploy.ps1` 真实部署 Vercel 生产（含 ADMIN_USER/ADMIN_PASS 环境变量注入） | Ready |
+| E2E 3 | **https://trendflow-site.vercel.app 真实线上** 同一套断言 | **151/151 通过** |
+
+断言覆盖：首页/全部内容页 200 且响应 <2s、Article/FAQPage JSON-LD 合法且含 headline/日期/citation、AI 披露块、具名来源、canonical、og:title、sitemap 全部 loc 可达且 host 一致、robots（Sitemap + Disallow /admin）、RSS 合法、/admin 未认证 401/503 且真实凭据 200、全站无死链、未知 slug 404。

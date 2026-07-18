@@ -13,6 +13,21 @@
 - **阶段一（自营验证）**：全自动引擎驱动自营网站组合，跑通"热词发现 → 内容生成（含编辑监督）→ SEO/GEO 优化 → 流量变现"闭环；
 - **阶段二（SaaS 产品化）**：将经过实盘验证的引擎产品化，对外订阅销售。
 
+## 阶段一首站已上线（TrendFlow）
+
+按计划书阶段一方案实现的首站 MVP 已部署到真实生产环境：**https://trendflow-site.vercel.app**
+（151 项 E2E 断言在真实线上 URL 全部通过，详见 `VERIFICATION-REPORT.md` 第二部分）。
+
+```powershell
+python -m pip install -r pipeline/requirements.txt
+python -m pipeline.run_pipeline        # 真实抓取 8 国热词→过滤→生成→审核→发布
+python tests/test_pipeline_unit.py     # 流水线单元测试（18 项）
+python tests/e2e_site.py               # 本地生产模式全套 E2E（需先 cd site && npm install）
+python tests/e2e_site.py --base-url https://trendflow-site.vercel.app   # 对线上跑同一套
+```
+
+上线自动化与仅剩的人工步骤（域名付款、可选 LLM key）见 `GO-LIVE-CHECKLIST.md`。
+
 ## 目录结构
 
 | 路径 | 内容 |
@@ -23,6 +38,10 @@
 | `data/` | 原始与处理后数据（CSV/JSON），每份数据附来源或生成脚本 |
 | `assets/` | 由脚本自动生成的图表（PNG） |
 | `SOURCES.md` | 全部外部引用来源清单（URL、访问日期、关键数据点） |
+| `pipeline/` | TrendFlow 内容流水线（抓取→合规过滤→双模式生成→审核关口→发布），GitHub Actions 每 6 小时运行 |
+| `site/` | TrendFlow 站点（Next.js 15，SEO/GEO 双轨优化 + 合规披露 + `/admin` 抽检后台） |
+| `tests/` | 流水线单元测试 + E2E 套件（本地/线上同一套断言） |
+| `deploy/` | 一键部署脚本（Vercel）与 <$2/年域名自动注册脚本（Porkbun，支持 dry-run） |
 
 ## 复现方法
 
