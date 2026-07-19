@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-19T17:49:34+00:00",
+  "generated_at_utc": "2026-07-19T17:59:55+00:00",
   "methodology": {
-    "term_list_source": "pipeline.opportunity_filter.AI_INFRA_TERMS (134 terms, single source of truth with the live filter)",
+    "term_list_source": "pipeline.opportunity_filter.AI_INFRA_TERMS (250 terms, single source of truth with the live filter)",
     "matching": "normalized phrase substring match over keyword + news titles (identical to pipeline._ai_infra_hits)",
     "dedup": "cross-geo dedup keeps highest-traffic copy (identical to pipeline)",
     "interval": "Poisson 95% CI via Wilson–Hilferty approximation, scaled to per-week",
@@ -24,6 +24,10 @@
       ],
       [
         "grok",
+        1
+      ],
+      [
+        "ai chatbot",
         1
       ],
       [
@@ -74,8 +78,9 @@
           "geo": "AU",
           "traffic_lower_bound": 100,
           "matched_terms": [
+            "xai",
             "grok",
-            "xai"
+            "ai chatbot"
           ],
           "news_titles": [
             "AI chatbot tip leads to arrest of Parkland man on child abuse, pornography charges",

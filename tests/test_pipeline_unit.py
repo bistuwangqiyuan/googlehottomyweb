@@ -189,17 +189,33 @@ def test_ai_infra_exempt_from_min_traffic():
 
 
 def test_ai_infra_outranks_consumer_tech():
-    """容量受限时 Tier S（ai-infra）优先于流量更高的 Tier A（consumer-tech）。"""
+    """ai-infra 不占容量：max_accept=1 时 ai-infra 与最优 consumer-tech 各自入选，
+    次优 consumer-tech 被容量拒绝。"""
     with tempfile.TemporaryDirectory() as d:
         trends = [
             make_trend("iphone 18 review", traffic=900_000),
+            make_trend("macbook m6 specs", traffic=100_000),
             make_trend("openai gpt 6 inference", traffic=5_000),
         ]
         res = _filter(trends, Path(d), max_accept=1)
+        accepted = {r.trend.keyword for r in res if r.accepted}
+        assert accepted == {"openai gpt 6 inference", "iphone 18 review"}, accepted
+        skipped = next(r for r in res if r.trend.keyword == "macbook m6 specs")
+        assert "skipped-capacity" in skipped.reason, skipped.reason
+
+
+def test_ai_infra_uncapped():
+    """通过全部关口的 ai-infra 机会全量放行，不受 max_accept 限制。"""
+    with tempfile.TemporaryDirectory() as d:
+        trends = [
+            make_trend(f"nvidia gpu topic {i}", traffic=1_000 + i) for i in range(6)
+        ] + [make_trend(f"general topic {i}", traffic=900_000) for i in range(4)]
+        res = _filter(trends, Path(d), max_accept=2)
         accepted = [r for r in res if r.accepted]
-        assert len(accepted) == 1 and accepted[0].trend.keyword == "openai gpt 6 inference", (
-            "Tier S (ai-infra) must outrank higher-traffic consumer-tech topics"
-        )
+        infra = [r for r in accepted if r.category == "ai-infra"]
+        other = [r for r in accepted if r.category != "ai-infra"]
+        assert len(infra) == 6, f"all 6 ai-infra must pass, got {len(infra)}"
+        assert len(other) == 2, f"non-infra capped at 2, got {len(other)}"
 
 
 def test_slugify():

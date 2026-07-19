@@ -35,7 +35,8 @@ def main() -> int:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser(description="TrendFlow content pipeline")
-    ap.add_argument("--max-publish", type=int, default=5, help="本轮最多发布篇数")
+    ap.add_argument("--max-publish", type=int, default=5,
+                    help="本轮非 ai-infra 类最多发布篇数（ai-infra 通过关口即全量放行，不占容量）")
     # 实测 Trending-Now RSS 的量级下界中位数约 500（data/trending_now_summary.json），阈值取中位数
     ap.add_argument("--min-traffic", type=int, default=500, help="最低搜索量下界")
     ap.add_argument("--fixture-dir", type=Path, default=None, help="离线模式：本地 RSS XML 目录")

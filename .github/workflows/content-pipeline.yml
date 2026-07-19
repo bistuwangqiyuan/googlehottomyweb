@@ -2,8 +2,9 @@ name: content-pipeline
 
 on:
   schedule:
-    # 每 6 小时运行一次（UTC）
-    - cron: "17 */6 * * *"
+    # 每 2 小时运行一次（UTC）——热词生命周期短，密集采样抓住全部 ai-infra 机会窗口；
+    # 大众类内容量由 --max-publish 配额约束（ai-infra 不占配额），不随频率线性膨胀
+    - cron: "17 */2 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -36,7 +37,9 @@ jobs:
           REVIEW_API_KEY: ${{ secrets.REVIEW_API_KEY }}
           REVIEW_BASE_URL: ${{ secrets.REVIEW_BASE_URL }}
           REVIEW_MODEL: ${{ secrets.REVIEW_MODEL }}
-        run: python -m pipeline.run_pipeline --max-publish 5
+        # --max-publish 仅约束非 ai-infra 类（大众/消费科技）；ai-infra 全量放行。
+        # 加密采样频率（6h→2h）的同时把大众类配额 5→3，总量受 7 天去重窗自然约束
+        run: python -m pipeline.run_pipeline --max-publish 3
 
       - name: Commit and push new content
         run: |

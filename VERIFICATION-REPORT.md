@@ -141,6 +141,16 @@ python scripts/11_verify_doc_consistency.py    # 文档数字逐条核对
 
 **评估过但未采纳的杠杆**：将 cron 从 6h 加密到 3h 可再翻倍采样面，但每轮发布上限 5 篇不变时会成倍增加低价值大众话题页面，触碰 Google 规模化内容滥用（scaled content abuse）红线，得不偿失，暂不采纳；若后续需要，正确做法是"加频 + 收紧 general 类发布配额"同步实施。
 
+### 3.2 供给最大化迭代（第三轮）：抓住一切 ai-infra 机会
+
+目标改为"ai-infra 绝对篇数最大化"。三项改动（其中加频采用了 3.1 预留的"加频 + 收紧配额"正确做法）：
+
+1. **ai-infra 不占发布容量**（`opportunity_filter.py`）：`max_accept` 改为仅约束非 ai-infra 类；通过全部合规关口（黑名单/具名来源/去重）的 ai-infra 机会一律全量放行。新增单测 `test_ai_infra_uncapped`（6 条 ai-infra + 4 条大众词、容量 2 → 6+2 放行）。流量门槛在 3.1 已对 ai-infra 完全豁免（等效为 0，无法再降）；合规关口不豁免，是底线。
+2. **词表约 100 → 约 190 词**，覆盖铭信全业务域：存储基础设施（storage array/all flash/IOPS/PCIe/Pure Storage/VAST Data 等）、国产算力生态（Cambricon/Moore Threads/Biren/Hygon/Loongson/SMIC 等）、HPC 与云（supercomputing/exascale/InfiniBand/Azure/AWS 等）、AI 组织与人物（Sam Altman/Jensen Huang 等）、AI 议题（ai agent/ai boom/eu ai act 等）。歧义控制升级：排除 "rtx"（雷神公司）、裸 "intel"（军事情报义）等，改用限定短语；误报后果仅为赞助卡出现在弱相关页（有明确标注），且 C1-C5 黑名单先于词表执行，品牌安全不受影响。
+3. **采样频率 6h → 2h + 大众类配额 5 → 3**（`content-pipeline.yml`）：热词生命周期短（中位半衰期 2 天、单条热榜停留数小时），每天 12 次采样抓住短命机会窗口；大众类内容量受"每轮 3 篇 + 7 天去重窗"双重约束，不随频率线性膨胀，规避规模化内容滥用风险。Actions 用量约 12 分钟/天（额度 2000 分钟/月），Vercel 构建约 12 次/天（免费额度 100 次/天），均富余。
+
+**实测**：单元测试 23/23 通过；20 国实时干跑中新配置一次放行 2 篇 ai-infra（"grok"、"micron technology"——后者为本轮词表+豁免的增量捕获）+ 3 篇大众类，容量语义符合设计。**供给上限的诚实推算**：采样频率 ×6（每天 2 快照日口径 → 12 次）后，供给期望上界不再受容量约束，理论上限 = 数据源中全部去重 ai-infra 热词；按 3.1 基线单快照命中约 1–2 条、热词榜单每 2–6 小时轮换估算，预期每周十至数十篇（受当周 AI 新闻密度支配，存在大波动，以实际发布量为准——审计日志逐条可查）。
+
 ## 四、诚实边界
 
 - 站点处于流量冷启动期（vercel.app 子域名、上线数日、尚无搜索排名），导流机制的价值随 SEO 积累释放，**不承诺任何短期流量数字**。

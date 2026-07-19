@@ -34,10 +34,11 @@ python tests/e2e_site.py --base-url https://trendflow-site.vercel.app   # 对线
 全部环节自动化、有测试断言保障（`VERIFICATION-REPORT.md` 第三部分）：
 
 - **垂直内容线**：机会过滤器新增 `ai-infra` 层（Tier S，优先级最高）——命中 AI 基础设施
-  词表（约 100 词：芯片厂商/产品、大模型、数据中心存储，含 9 种覆盖语言的本地语
-  AI/算力词，见 `pipeline/opportunity_filter.py` 的 `AI_INFRA_TERMS`）的热词优先发布，
-  并豁免 500+ 流量门槛（此类词量级天然偏低；合规黑名单与审核关口不豁免）；
-  抓取覆盖 20 国（8 原有 + 12 拉丁字母地区）；
+  词表（约 190 词，覆盖铭信全业务域：存储阵列/NVMe、国产算力生态、芯片厂商与产品、
+  大模型与 AI 组织/人物、数据中心/HPC/云，含 9 种覆盖语言的本地语词，见
+  `pipeline/opportunity_filter.py` 的 `AI_INFRA_TERMS`）的热词：**豁免流量门槛 +
+  不占发布容量**（通过合规关口即全量放行；黑名单/具名来源/去重/审核关口不豁免）；
+  抓取覆盖 20 国、每 2 小时采样一次（大众类每轮限 3 篇，总量受 7 天去重窗约束）；
 - **上下文赞助卡**：仅在 `ai-infra` 类简报页出现，可见 "Sponsored · Affiliated" 标注，
   文案只引用铭信官网已公开的签字级实测口径；
 - **全站页脚披露位**：轻量一行，同样明示 Sponsored 与关联关系；

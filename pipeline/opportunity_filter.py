@@ -56,45 +56,73 @@ BLACKLIST: dict[str, list[str]] = {
 # 支持多词短语；匹配方式与黑名单一致（规范化后子串匹配 keyword + 新闻标题）。
 # 词表选择依据：铭信业务域（存储加速 / 国产算力 / 算力中心）+ AI 基础设施公共话题词，
 # 命中率基线见 scripts/12_ai_infra_keyword_baseline.py（可复现）。
-# 精度优先原则：只收在新闻语境下几乎无歧义的词；刻意排除高歧义单词
-# （如 "arm"=手臂、"gemini"=星座、"sora" 单用、"kimi"=人名、"fab"），
-# 歧义品牌用限定短语（"google gemini"、"moonshot ai"、"mistral ai"）。
+# 覆盖铭信全业务域（存储加速 / 国产算力 / 算力中心 / 效能优化 / AI 软件栈）。
+# 精度原则：排除会污染品牌安全的高歧义单词（"arm"=手臂、"gemini"=星座、"sora" 单用、
+# "kimi"=人名、"fab"、"rtx"=雷神公司、"intel"=军事情报、"gaudi"=建筑师、"azure"=天蓝色、
+# "raid"=突袭、"runway"=跑道），歧义品牌一律用限定短语。误报后果仅是赞助卡出现在
+# 弱相关页（有明确标注），C1-C5 黑名单先于本词表执行，品牌安全不受影响。
 AI_INFRA_TERMS = [
-    # 芯片与算力硬件（厂商 / 产品 / 部件）
-    "gpu", "nvidia", "h100", "h200", "b200", "b300", "gb200", "gb300", "gh200",
-    "blackwell", "nvidia rubin", "dgx", "geforce rtx",
-    "tpu", "npu", "ai chip", "ai chips", "ai accelerator", "ai accelerators",
-    "semiconductor", "semiconductors", "tsmc", "sk hynix", "micron", "broadcom",
-    "qualcomm", "snapdragon", "amd", "intel", "arm holdings",
-    "hbm", "hbm3", "hbm3e", "hbm4", "cuda", "ascend", "instinct",
-    "mi300", "mi308", "mi325", "mi355", "trainium", "inferentia",
-    "cerebras", "groq", "sambanova", "graphcore", "chip plant", "chip factory",
-    "chipmaker", "chip maker", "foundry", "wafer",
-    # 大模型与推理（组织 / 模型 / 概念）
-    "llm", "large language model", "large language models", "ai model", "ai models",
-    "model training", "inference", "openai", "anthropic", "deepseek", "qwen",
-    "mistral ai", "moonshot ai", "frontier model", "artificial intelligence",
-    "generative ai", "genai", "agi", "chatgpt", "gpt 5", "gpt5", "gpt 6",
-    "claude", "grok", "meta llama", "llama 3", "llama 4",
-    "google gemini", "gemini ai", "copilot",
-    "perplexity", "hugging face", "stability ai", "meta ai", "xai",
-    "openai sora", "midjourney",
-    # 数据中心与存储基础设施
+    # ---- 芯片与算力硬件：厂商 ----
+    "nvidia", "tsmc", "sk hynix", "micron", "broadcom", "qualcomm", "snapdragon",
+    "amd", "arm holdings", "intel chip", "intel chips", "intel ceo", "intel foundry",
+    "cerebras", "groq", "sambanova", "graphcore", "chipmaker", "chip maker",
+    "chip plant", "chip factory", "foundry", "wafer", "semiconductor",
+    "semiconductors", "chip ban", "chip export", "chip exports", "export controls",
+    "chips act", "chip shortage", "chip war",
+    # ---- 芯片与算力硬件：产品与部件 ----
+    "gpu", "gpus", "tpu", "npu", "ai chip", "ai chips", "ai accelerator",
+    "ai accelerators", "h100", "h200", "a100", "b200", "b300", "gb200", "gb300",
+    "gh200", "blackwell", "nvidia rubin", "dgx", "geforce rtx", "rtx 5090",
+    "rtx 5080", "rtx 6090", "cuda", "nvlink", "hbm", "hbm3", "hbm3e", "hbm4",
+    "radeon", "instinct", "mi300", "mi308", "mi325", "mi355", "epyc", "ryzen",
+    "threadripper", "xeon", "intel arc", "intel gaudi", "trainium", "inferentia",
+    "risc v", "dram", "ddr5", "ddr6", "nand", "3d nand", "qlc", "memory chip",
+    "memory chips", "cxl",
+    # ---- 国产算力生态（铭信核心业务域）----
+    "ascend", "ascend 910", "huawei ai", "cambricon", "moore threads", "biren",
+    "hygon", "loongson", "kunlunxin", "enflame", "smic", "ymtc", "cxmt",
+    # ---- 大模型与 AI 组织 ----
+    "llm", "llms", "large language model", "large language models", "ai model",
+    "ai models", "model training", "inference", "openai", "anthropic", "deepseek",
+    "qwen", "qwen3", "mistral ai", "moonshot ai", "kimi k2", "zhipu", "minimax ai",
+    "doubao", "ernie bot", "iflytek", "sensetime", "deepmind", "meta ai", "xai",
+    "stability ai", "perplexity", "hugging face", "cohere", "elevenlabs",
+    "eleven labs", "notebooklm",
+    # ---- 模型与产品 ----
+    "chatgpt", "gpt 4", "gpt4", "gpt 5", "gpt5", "gpt 6", "claude", "grok",
+    "meta llama", "llama 3", "llama 4", "google gemini", "gemini ai", "gemini 2",
+    "gemini 3", "copilot", "openai sora", "midjourney", "frontier model",
+    # ---- AI 概念与议题 ----
+    "artificial intelligence", "generative ai", "genai", "agi", "superintelligence",
+    "ai agent", "ai agents", "agentic ai", "ai chatbot", "ai assistant",
+    "ai search", "ai video", "ai coding", "vibe coding", "ai boom", "ai bubble",
+    "ai race", "eu ai act", "ai regulation",
+    # ---- AI 行业人物 ----
+    "sam altman", "jensen huang", "dario amodei", "demis hassabis",
+    # ---- 数据中心 / HPC / 云 ----
     "data center", "data centers", "datacenter", "datacenters", "data centre",
-    "data centres", "supercomputer", "supercomputers", "ai server", "ai servers",
-    "nvme", "ssd", "flash storage", "ai infrastructure", "compute cluster",
-    "gpu cluster", "colocation", "hyperscaler", "hyperscale", "server farm",
-    "liquid cooling", "coreweave", "nebius", "lambda labs", "stargate",
-    "colossus", "kv cache", "object storage",
-    # 行业事件
+    "data centres", "supercomputer", "supercomputers", "supercomputing", "hpc",
+    "high performance computing", "exascale", "exaflop", "petaflops", "ai server",
+    "ai servers", "ai infrastructure", "compute cluster", "gpu cluster",
+    "gpu shortage", "colocation", "hyperscaler", "hyperscale", "server farm",
+    "liquid cooling", "infiniband", "coreweave", "nebius", "lambda labs",
+    "stargate", "colossus", "equinix", "digital realty", "vertiv", "supermicro",
+    "microsoft azure", "google cloud", "oracle cloud", "aws", "cloud computing",
+    # ---- 存储基础设施（铭信核心业务域）----
+    "nvme", "ssd", "ssds", "flash storage", "all flash", "storage array",
+    "storage arrays", "object storage", "kv cache", "pcie", "iops",
+    "pure storage", "netapp", "vast data", "weka",
+    # ---- AI 软件栈 ----
+    "vllm", "tensorrt", "pytorch",
+    # ---- 行业事件 ----
     "gtc", "computex",
-    # 覆盖地区的本地语言 AI/算力词（与英文词同一匹配口径；normalization 两侧一致，
-    # 含变音符的词照常工作）
+    # ---- 覆盖地区的本地语言 AI/算力词（normalization 两侧一致，含变音符照常匹配）----
     "inteligencia artificial", "inteligência artificial", "intelligence artificielle",
     "intelligenza artificiale", "künstliche intelligenz", "sztuczna inteligencja",
     "kunstmatige intelligentie", "kecerdasan buatan", "artificiell intelligens",
-    "centro de datos", "centros de datos", "centro de dados", "rechenzentrum",
-    "datacentrum",
+    "ia generativa", "centro de datos", "centros de datos", "centro de dados",
+    "centre de données", "centres de données", "rechenzentrum", "datacentrum",
+    "pusat data",
 ]
 
 # ---------- 意图评分词表（消费科技/产品意图 → Tier A，商业价值更高） ----------
@@ -231,12 +259,18 @@ def filter_trends(
         score, category = _intent_score(t)
         scored.append(FilterResult(t, True, "passed all gates", category=category, score=score))
 
-    # Tier S（ai-infra）> Tier A（consumer-tech）> general，同层内分数降序；超出容量的降级为 skipped
+    # Tier S（ai-infra）> Tier A（consumer-tech）> general，同层内分数降序。
+    # ai-infra 不占发布容量（通过全部合规关口的 ai-infra 机会全量放行）；
+    # max_accept 仅约束其余类别，控制大众话题内容量。
     tier_rank = {"ai-infra": 2, "consumer-tech": 1}
     scored.sort(key=lambda r: (-tier_rank.get(r.category, 0), -r.score))
-    for i, r in enumerate(scored):
-        if i >= max_accept:
+    non_infra_rank = 0
+    for r in scored:
+        if r.category == "ai-infra":
+            continue
+        non_infra_rank += 1
+        if non_infra_rank > max_accept:
             r.accepted = False
-            r.reason = f"skipped-capacity: rank {i + 1} > max {max_accept}"
+            r.reason = f"skipped-capacity: non-infra rank {non_infra_rank} > max {max_accept}"
     results.extend(scored)
     return results
