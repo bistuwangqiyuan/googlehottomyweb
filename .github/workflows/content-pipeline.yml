@@ -50,14 +50,51 @@ jobs:
         run: python -m pipeline.run_pipeline --max-publish 3
 
       - name: Commit and push new content
+        id: commit
         run: |
-          git config user.name "trendflow-pipeline[bot]"
-          git config user.email "pipeline@users.noreply.github.com"
+          # 必须用仓库所有者的 GitHub 身份提交：Vercel 免费版会 BLOCK 非团队成员
+          # 提交者触发的部署（2026-07-19 实测：bot 身份提交全部 BLOCKED，本人身份全部 READY）
+          git config user.name "wang qiyuan"
+          git config user.email "82208691+bistuwangqiyuan@users.noreply.github.com"
           git add site/content
           if git diff --cached --quiet; then
             echo "No new content this run."
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
           else
+            slug=$(git diff --cached --name-only --diff-filter=A -- site/content/briefings \
+                   | head -n1 | xargs -r basename | sed 's/\.json$//')
             git commit -m "content: automated pipeline run $(date -u +%Y-%m-%dT%H:%MZ)"
             git pull --rebase origin ${GITHUB_REF_NAME}
             git push origin HEAD:${GITHUB_REF_NAME}
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
+            echo "slug=$slug" >> "$GITHUB_OUTPUT"
           fi
+
+      # Vercel 的 Git 集成构建偶发卡死（状态 UNKNOWN 不出错也不完成，2026-07-19 实测多次）。
+      # 看门狗：等 Git 集成部署生效；超时未生效则用 Deploy Hook 强制重建，再验证一轮。
+      - name: Deploy watchdog (Vercel stuck-build fallback)
+        if: steps.commit.outputs.pushed == 'true' && steps.commit.outputs.slug != ''
+        env:
+          DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+          SLUG: ${{ steps.commit.outputs.slug }}
+        run: |
+          url="https://trendflow-site.vercel.app/briefings/${SLUG}"
+          check() {
+            for i in $(seq 1 "$1"); do
+              sleep 30
+              code=$(curl -s -o /dev/null -w '%{http_code}' "$url" || echo 000)
+              echo "  attempt $i: HTTP $code"
+              [ "$code" = "200" ] && return 0
+            done
+            return 1
+          }
+          echo "waiting for git-integration deploy of $url"
+          if check 6; then echo "deploy verified"; exit 0; fi
+          if [ -z "$DEPLOY_HOOK_URL" ]; then
+            echo "::warning::deploy not live after 3min and no VERCEL_DEPLOY_HOOK_URL configured"
+            exit 0
+          fi
+          echo "git-integration deploy stuck; triggering fallback deploy hook"
+          curl -s -X POST "$DEPLOY_HOOK_URL" > /dev/null
+          if check 10; then echo "fallback deploy verified"; exit 0; fi
+          echo "::warning::content still not live after fallback deploy; will self-heal on next run"
