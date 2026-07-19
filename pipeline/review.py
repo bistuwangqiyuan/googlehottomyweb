@@ -25,16 +25,28 @@ LLM_REVIEW_THRESHOLD = 0.75
 
 
 def review_config() -> dict | None:
-    key = (os.environ.get("REVIEW_API_KEY") or os.environ.get("LLM_API_KEY", "")).strip()
-    if not key:
+    """独立审核配置（原子成套）。
+
+    有 REVIEW_API_KEY 时用完整的 REVIEW_* 三元组；没有时整套借用 LLM_* 三元组，
+    并忽略任何残留的部分 REVIEW_* 变量——混搭（如 REVIEW_MODEL + LLM key/base）
+    会把不存在的模型名发给错误的厂商端点，必然 400。"""
+    review_key = os.environ.get("REVIEW_API_KEY", "").strip()
+    if review_key:
+        return {
+            "api_key": review_key,
+            "base_url": (
+                os.environ.get("REVIEW_BASE_URL")
+                or os.environ.get("LLM_BASE_URL", "https://api.openai.com/v1")
+            ).rstrip("/"),
+            "model": os.environ.get("REVIEW_MODEL", "gpt-4o"),
+        }
+    llm_key = os.environ.get("LLM_API_KEY", "").strip()
+    if not llm_key:
         return None
     return {
-        "api_key": key,
-        "base_url": (
-            os.environ.get("REVIEW_BASE_URL")
-            or os.environ.get("LLM_BASE_URL", "https://api.openai.com/v1")
-        ).rstrip("/"),
-        "model": os.environ.get("REVIEW_MODEL", "gpt-4o"),
+        "api_key": llm_key,
+        "base_url": os.environ.get("LLM_BASE_URL", "https://api.openai.com/v1").rstrip("/"),
+        "model": os.environ.get("LLM_MODEL", "gpt-4o-mini"),
     }
 
 
