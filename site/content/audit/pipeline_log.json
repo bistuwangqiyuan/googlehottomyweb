@@ -1,286 +1,6 @@
 [
   {
     "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "pamela anderson",
-    "geo": "US",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "fidelity etf",
-    "geo": "US",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "andrew truelove",
-    "geo": "US",
-    "decision": "rejected",
-    "reason": "blacklist C4-gossip: matched 'arrested'"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "allen iverson",
-    "geo": "US",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "earthquake now",
-    "geo": "US",
-    "decision": "rejected",
-    "reason": "blacklist C3-tragedy: matched 'died'"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "earthquake los angeles",
-    "geo": "US",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "was the trojan war real",
-    "geo": "US",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "trump tuchel",
-    "geo": "GB",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "arman tsarukyan",
-    "geo": "GB",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "uk summer temperatures bbc weather",
-    "geo": "GB",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "bbc rugby",
-    "geo": "GB",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "diamond league london 2026",
-    "geo": "GB",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "man u",
-    "geo": "GB",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "manchester united",
-    "geo": "CA",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "robert pattinson",
-    "geo": "CA",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "elliot page",
-    "geo": "CA",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "nationals vs athletics",
-    "geo": "CA",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "sun vs mercury",
-    "geo": "CA",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "tree",
-    "geo": "CA",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "samsung unpacked",
-    "geo": "AU",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "auction results melbourne",
-    "geo": "AU",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "arman tsarukyan",
-    "geo": "AU",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "crocodiles",
-    "geo": "AU",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "warriors",
-    "geo": "AU",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "হাওড়া",
-    "geo": "IN",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "കുവൈറ്റ്",
-    "geo": "IN",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "ಬೆಳ್ಳಿ",
-    "geo": "IN",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "विधेयक",
-    "geo": "IN",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "सतीश गोलचा",
-    "geo": "IN",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "lottery result",
-    "geo": "IN",
-    "decision": "rejected",
-    "reason": "blacklist C2-gambling-adult: matched 'jackpot'"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "wuppertal",
-    "geo": "DE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "erdbeben",
-    "geo": "DE",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "kyjiw",
-    "geo": "DE",
-    "decision": "rejected",
-    "reason": "blacklist C3-tragedy: matched 'killed'"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "michelle",
-    "geo": "DE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "hessenschau",
-    "geo": "DE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "sinan kurt",
-    "geo": "DE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "renata vasconcellos",
-    "geo": "BR",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "bruna marquezine",
-    "geo": "BR",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "novela coração acelerado",
-    "geo": "BR",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
-    "keyword": "nico hülkenberg",
-    "geo": "BR",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-07-18T09:02:46+00:00",
     "keyword": "mc donalds",
     "geo": "BR",
     "decision": "rejected",
@@ -5921,5 +5641,1408 @@
     "decision": "published",
     "reason": "score 1.0 (rules)",
     "slug": "2026-07-19-ed-harris-dutton-ranch-season-2"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "dani olmo",
+    "geo": "US",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "brad pitt",
+    "geo": "US",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "who won the last world cup 2022",
+    "geo": "US",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "gerard piqué",
+    "geo": "US",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "aymeric laporte",
+    "geo": "US",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "brad pitt",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "romero",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "pharrell",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "lionel messi net worth",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "unai simón",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "has spain ever won the world cup",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "how many people are watching the world cup",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "aymeric laporte",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "matt damon wife",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "lisandro martínez",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "nico gonzalez",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "messi net worth",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "messi and lamine yamal",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "rodri",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "dani olmo",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "soccer",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "will ferrell",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "bbc iplayer",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "yamal",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "jennifer hudson",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "cucurella",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "yamal",
+    "geo": "IN",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "supersport",
+    "geo": "IN",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "football khela",
+    "geo": "IN",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "luis de la fuente",
+    "geo": "IN",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "argentina vs france",
+    "geo": "IN",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "aramco",
+    "geo": "DE",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "copa america",
+    "geo": "DE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "unai simón",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "will ferrell",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "goleiro da espanha",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "melania trump",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "messi",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "ニュージャージー州",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "エンソフェルナンデス",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "españa - argentina",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "ペレ",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "dedup: same keyword published within 7 days"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "フレディ・フリーマン",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "ジダン",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "lamine yamal",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "월드컵",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "matt damon",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "will ferrell",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "dani olmo",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "álex baena",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "brad pitt",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "unai simon",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "cucurella",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "will ferrell",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "brad pitt",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "luciana barroso",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "mcallister",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "mac allister",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "will ferrell",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "matt damon",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "new york new jersey stadium",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "cuantos años tiene messi",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "radio television española",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "will ferrel",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "aramco",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "oyarzabal",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "will ferrell",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "dani olmo",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "melania trump",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "lisandro martinez",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "emiliano martínez",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "matt damon",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "melania trump",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "cucurella",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "zlatan",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "radiosporten",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "robin williams",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "donald trump",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "cazetv",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "metlife stadium new jersey",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "leo messi",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "will ferrell",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "will ferrell",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "metlife stadium capacidad",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "gavi",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "presidente de argentina",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "fernet",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "david raya",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "aramco",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "matt damon",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "espn",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "blacklist C3-tragedy: matched 'killed'"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "trump",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "porro",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "clima new york",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "fabian ruiz",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "radio la red",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "rey de españa",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "mí telefe en vivo",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "dani olmo",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "luis de la fuente",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "sport",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "fabián ruiz",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "marcos senesi",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "álex baena",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "marc cucurella",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "dani olmo",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "channel 5 world cup",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "lisandro martínez",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "2022 world cup final",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "世界杯直播",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "messi height",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "rodri",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "marc cucurella",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "matt damon",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "espanha - argentina",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "2022 world cup final",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "aymeric laporte",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "messi height",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "new york time",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "rodri",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "spain team",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "dani olmo",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "matt damon wife",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "matt damon",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "will ferrell",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "alexis mac allister",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "slavko vinčić",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "unai simon",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "lamine yamal messi",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "dani olmo",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "football games today",
+    "geo": "US",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 4 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "lisandro martinez",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 5 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "pedro porro",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 6 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "jennifer hudson",
+    "geo": "IN",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 7 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "matt damon",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 8 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "lamine yamal",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 9 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "laura pausini",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 10 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "livescore",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 11 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "matt damons wife",
+    "geo": "US",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 12 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "matt damon wife nationality",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 13 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "rodri",
+    "geo": "IN",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 14 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "álex baena",
+    "geo": "IN",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 15 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "cucurella",
+    "geo": "DE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 16 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "oyarzabal",
+    "geo": "DE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 17 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "lele adani",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 18 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "alex baena",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 19 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "dani olmo",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 20 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "betclic",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 21 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "robbie williams desire (official fifa anthem)",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 22 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "goal",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 23 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "unai simón",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 24 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "phillies score",
+    "geo": "US",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 25 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "martinez",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 26 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "pele",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 27 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "jamal musiala",
+    "geo": "DE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 28 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "brad pitt",
+    "geo": "DE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 29 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "rodri espanha",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 30 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "copacabana",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 31 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "laporte",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 32 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "fifaランキング",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 33 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "tv ce soir",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 34 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "emiliano martinez",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 35 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "romero",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 36 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "edad de messi",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 37 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "new jersey stadium",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 38 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "new york new jersey stadium",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 39 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "unai simon",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 40 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "estados unidos",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 41 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "world cup final stadium",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 42 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "messi height",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 43 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "messi wife",
+    "geo": "US",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 44 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "olmo",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 45 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "julian alvarez",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 46 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "aramco",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 47 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "mikel oyarzabal",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 48 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "messi bathing yamal",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 49 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "new york temperature",
+    "geo": "IN",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 50 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "luciana barroso",
+    "geo": "DE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 51 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "david hasselhoff",
+    "geo": "DE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 52 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "lisandro martínez",
+    "geo": "DE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 53 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "taça da copa do mundo",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 54 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "tagliafico",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 55 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "infantino",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 56 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "omar da fonseca",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 57 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "lamin yamal",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 58 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "pau cubarsí",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 59 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "radio televisión española",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 60 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "hoe oud is lamine yamal",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 61 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "melania trump",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 62 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "trump",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 63 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "de la fuente",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 64 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "enzo fernández",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 65 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "emiliano martínez",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 66 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "cuantos años tiene yamal",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 67 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "cristian romero",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 68 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "david raya",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 69 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "yamal",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 70 > max 3"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "sky vs dream",
+    "geo": "US",
+    "decision": "published",
+    "reason": "score 1.0 (rules)",
+    "slug": "2026-07-19-sky-vs-dream"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "win match",
+    "geo": "IN",
+    "decision": "published",
+    "reason": "score 1.0 (rules)",
+    "slug": "2026-07-19-win-match"
+  },
+  {
+    "runAt": "2026-07-19T19:35:09+00:00",
+    "keyword": "will ferrell",
+    "geo": "DE",
+    "decision": "published",
+    "reason": "score 1.0 (rules)",
+    "slug": "2026-07-19-will-ferrell"
   }
 ]
