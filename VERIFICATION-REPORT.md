@@ -98,3 +98,39 @@ python scripts/11_verify_doc_consistency.py    # 文档数字逐条核对
 | E2E 4 | 自动部署后线上最终回归（14 篇内容） | **187/187 通过** |
 
 断言覆盖：首页/全部内容页 200 且响应 <2s、Article/FAQPage JSON-LD 合法且含 headline/日期/citation、AI 披露块、具名来源、canonical、og:title、sitemap 全部 loc 可达且 host 一致、robots（Sitemap + Disallow /admin）、RSS 合法、/admin 未认证 401/503 且真实凭据 200、全站无死链、未知 slug 404。
+
+---
+
+# 第三部分：AI/算力垂直线与铭信合规导流
+
+**日期**：2026-07-19 ｜ **范围**：为关联业务铭信（MingXin Technology，mingxinstorage.xyz）建立合规导流机制——ai-infra 垂直内容线 + 披露式赞助位，全程自动化、测试断言强制合规。
+
+## 一、交付物
+
+| 组件 | 路径 | 说明 |
+|---|---|---|
+| ai-infra 垂直层 | `pipeline/opportunity_filter.py` | 新增 `AI_INFRA_TERMS` 词表（芯片/大模型/数据中心存储三组）与 `ai-infra` 类别，Tier S 优先级（> consumer-tech > general）；合规黑名单 C1–C5 与审核关口零改动 |
+| 赞助配置单一来源 | `site/lib/sponsor.ts` | 铭信信息 + UTM 构造（`utm_source=trendflow&utm_medium=sponsored&utm_campaign=ai-infra&utm_content=<位>`）；文案只引用铭信官网公开的签字级实测口径（R2/R3：吞吐 +29–40%、TTFT 降 26–32%） |
+| 上下文赞助卡 | `site/components/SponsorCard.tsx` | 仅在 `ai-infra` 类简报页渲染；可见 "Sponsored · Affiliated" 标注 + 关联关系披露 + `rel="sponsored noopener"` |
+| 全站页脚披露位 | `site/app/layout.tsx` | 轻量一行，同样三要素齐全 |
+| 广告披露政策 | `site/app/about/page.tsx#advertising` | 公开关联关系、标注规则、"赞助不影响选题/过滤/审核"承诺 |
+| 供给基线脚本 | `scripts/12_ai_infra_keyword_baseline.py` | 词表与匹配逻辑直接 import 流水线（单一事实来源），输出 `data/ai_infra_baseline.json` |
+
+## 二、测试结果
+
+| 套件 | 结果 |
+|---|---|
+| 流水线单元测试（含新增 3 项 ai-infra 分类/短语匹配/优先级断言） | **21/21 通过** |
+| 离线 fixture 干跑（`--dry-run --fixture-dir tests/fixtures`） | 退出码 0，4 篇过审 |
+| 本地生产模式 E2E（新增页脚赞助位三要素、赞助卡当且仅当 ai-infra、/about 披露章节断言） | **399/399 通过** |
+| 真实线上 E2E（https://trendflow-site.vercel.app） | 见下方"上线回归"行 |
+
+## 三、供给基线（实测，可复现）
+
+`data/ai_infra_baseline.json`（2026-07-19 生成，任何第三方可重跑）：2 个快照日（2026-07-14 归档 + 2026-07-19 实时）共 134 个去重热词中命中 ai-infra 2 个（命中率 1.49%），换算每周供给点估计 7.0 篇、Poisson 95% 置信区间 **0.8–25.3 篇/周**。方法学注记：RSS 快照为时点采样（每国约 25 条），非全天热词流，因此该基线是保守下界。
+
+## 四、诚实边界
+
+- 站点处于流量冷启动期（vercel.app 子域名、上线数日、尚无搜索排名），导流机制的价值随 SEO 积累释放，**不承诺任何短期流量数字**。
+- 导流点击的最终测量在铭信站点侧完成（UTM 归因）；铭信官网需接入任一分析工具（如 Vercel Analytics/Plausible）才能读取 `utm_source=trendflow` 数据，该一次性配置在铭信站点仓库，不在本仓库范围内。
+- 合规对标：可见 Sponsored 标注 + 关联关系披露（FTC 披露规范）、`rel="sponsored"`（Google 链接政策）、赞助卡只出现在主题相关页面且不伪装为编辑内容（避开站点声誉滥用）。以上三要素均有 E2E 断言强制，回归即验证。

@@ -21,12 +21,32 @@
 ```powershell
 python -m pip install -r pipeline/requirements.txt
 python -m pipeline.run_pipeline        # 真实抓取 8 国热词→过滤→生成→审核→发布
-python tests/test_pipeline_unit.py     # 流水线单元测试（18 项）
+python tests/test_pipeline_unit.py     # 流水线单元测试（21 项）
 python tests/e2e_site.py               # 本地生产模式全套 E2E（需先 cd site && npm install）
 python tests/e2e_site.py --base-url https://trendflow-site.vercel.app   # 对线上跑同一套
 ```
 
 上线自动化与仅剩的人工步骤（域名付款、可选 LLM key）见 `GO-LIVE-CHECKLIST.md`。
+
+## AI/算力垂直线与合规导流（铭信）
+
+站点为关联业务铭信（MingXin Technology，https://mingxinstorage.xyz/ ）设置了合规导流位，
+全部环节自动化、有测试断言保障（`VERIFICATION-REPORT.md` 第三部分）：
+
+- **垂直内容线**：机会过滤器新增 `ai-infra` 层（Tier S，优先级最高）——命中 AI 基础设施
+  词表（GPU/LLM/推理/数据中心/NVMe 等，见 `pipeline/opportunity_filter.py` 的
+  `AI_INFRA_TERMS`）的热词优先发布；
+- **上下文赞助卡**：仅在 `ai-infra` 类简报页出现，可见 "Sponsored · Affiliated" 标注，
+  文案只引用铭信官网已公开的签字级实测口径；
+- **全站页脚披露位**：轻量一行，同样明示 Sponsored 与关联关系；
+- **合规三要素**（E2E 断言强制）：可见标注 + `rel="sponsored"` + UTM 归因参数
+  （`utm_source=trendflow`，在铭信站点侧可测量）；`/about#advertising` 公开完整披露政策；
+- **供给基线（可复现）**：`python scripts/12_ai_infra_keyword_baseline.py` 输出
+  `data/ai_infra_baseline.json`——基于 RSS 快照实测 ai-infra 热词命中率并给出每周供给
+  的 95% 置信区间（区间表达，不作点断言）。
+
+诚实边界：站点当前处于流量冷启动期（vercel.app 子域名、上线数日），导流量随 SEO 积累
+增长，本仓库不承诺任何短期流量数字；导流点击的最终测量在铭信站点侧（UTM 归因）。
 
 ## 目录结构
 

@@ -152,6 +152,42 @@ def test_tier_a_priority():
         )
 
 
+def test_ai_infra_classification():
+    """含 AI 基础设施词的热词必须归类为 ai-infra（Tier S）。"""
+    with tempfile.TemporaryDirectory() as d:
+        news = [NewsItem(title="Nvidia unveils next Blackwell GPU for data center AI",
+                         url="https://e.com/a", source="E")]
+        res = _filter([make_trend("nvidia blackwell", news=news)], Path(d))
+        accepted = [r for r in res if r.accepted]
+        assert len(accepted) == 1 and accepted[0].category == "ai-infra", (
+            f"expected ai-infra, got {accepted[0].category if accepted else 'rejected'}"
+        )
+
+
+def test_ai_infra_phrase_match():
+    """多词短语（如 data center）也要能命中，且只看新闻标题也算。"""
+    with tempfile.TemporaryDirectory() as d:
+        news = [NewsItem(title="New data center powers local AI boom",
+                         url="https://e.com/a", source="E")]
+        res = _filter([make_trend("some regional project", news=news)], Path(d))
+        accepted = [r for r in res if r.accepted]
+        assert len(accepted) == 1 and accepted[0].category == "ai-infra"
+
+
+def test_ai_infra_outranks_consumer_tech():
+    """容量受限时 Tier S（ai-infra）优先于流量更高的 Tier A（consumer-tech）。"""
+    with tempfile.TemporaryDirectory() as d:
+        trends = [
+            make_trend("iphone 18 review", traffic=900_000),
+            make_trend("openai gpt 6 inference", traffic=5_000),
+        ]
+        res = _filter(trends, Path(d), max_accept=1)
+        accepted = [r for r in res if r.accepted]
+        assert len(accepted) == 1 and accepted[0].trend.keyword == "openai gpt 6 inference", (
+            "Tier S (ai-infra) must outrank higher-traffic consumer-tech topics"
+        )
+
+
 def test_slugify():
     assert slugify("Pixel 11 Pro!") == "pixel-11-pro"
     assert slugify("日本語キーワード").startswith("trend-")

@@ -52,6 +52,25 @@ BLACKLIST: dict[str, list[str]] = {
     ],
 }
 
+# ---------- AI/算力基础设施词表（→ Tier S "ai-infra"，赞助位受众相关性最高） ----------
+# 支持多词短语；匹配方式与黑名单一致（规范化后子串匹配 keyword + 新闻标题）。
+# 词表选择依据：铭信业务域（存储加速 / 国产算力 / 算力中心）+ AI 基础设施公共话题词，
+# 命中率基线见 scripts/12_ai_infra_keyword_baseline.py（可复现）。
+AI_INFRA_TERMS = [
+    # 芯片与算力硬件
+    "gpu", "nvidia", "h100", "h200", "b200", "gb200", "blackwell", "rubin",
+    "tpu", "ai chip", "ai chips", "ai accelerator", "semiconductor", "tsmc",
+    "hbm", "cuda", "ascend", "instinct", "mi300", "mi308",
+    # 大模型与推理
+    "llm", "large language model", "ai model", "model training", "inference",
+    "openai", "anthropic", "deepseek", "qwen", "mistral ai", "frontier model",
+    "gpt 5", "gpt5", "claude", "grok", "llama",
+    # 数据中心与存储基础设施
+    "data center", "data centers", "datacenter", "supercomputer", "ai server",
+    "nvme", "ssd", "flash storage", "ai infrastructure", "compute cluster",
+    "colocation", "hyperscaler",
+]
+
 # ---------- 意图评分词表（消费科技/产品意图 → Tier A，商业价值更高） ----------
 TECH_PRODUCT_TERMS = [
     "ai", "app", "chatgpt", "gpt", "gemini", "copilot", "openai", "iphone", "ipad",
@@ -97,8 +116,16 @@ def _blacklist_hit(trend: Trend) -> str | None:
     return None
 
 
+def _ai_infra_hits(trend: Trend) -> list[str]:
+    """AI/算力基础设施词命中（短语级子串匹配，与黑名单同一匹配口径）。"""
+    corpus = " " + _norm_text(trend.keyword) + " "
+    for n in trend.news:
+        corpus += " " + _norm_text(n.title) + " "
+    return [term for term in AI_INFRA_TERMS if f" {_norm_text(term)} " in corpus]
+
+
 def _intent_score(trend: Trend) -> tuple[float, str]:
-    """返回 (score, category)。Tier A（consumer-tech）优先，其余为 general news。"""
+    """返回 (score, category)。Tier S（ai-infra）> Tier A（consumer-tech）> general。"""
     corpus_words = set(_norm_text(trend.keyword).split())
     for n in trend.news:
         corpus_words |= set(_norm_text(n.title).split())
@@ -106,6 +133,10 @@ def _intent_score(trend: Trend) -> tuple[float, str]:
     traffic = trend.traffic_lower_bound or 0
     # 量级分 0-1（1M+ 封顶）+ 意图分 0-1（3 个词命中封顶）
     volume_score = min(traffic / 1_000_000, 1.0)
+    infra_hits = _ai_infra_hits(trend)
+    if infra_hits:
+        infra_intent = min(len(infra_hits) / 3.0, 1.0)
+        return 0.5 * infra_intent + 0.5 * volume_score + 1.0, "ai-infra"  # Tier S 加 1.0 基础分
     intent = min(len(hits) / 3.0, 1.0)
     if hits:
         return 0.5 * intent + 0.5 * volume_score + 0.5, "consumer-tech"  # Tier A 加 0.5 基础分
@@ -173,8 +204,9 @@ def filter_trends(
         score, category = _intent_score(t)
         scored.append(FilterResult(t, True, "passed all gates", category=category, score=score))
 
-    # Tier A 优先、分数降序，超出容量的降级为 skipped
-    scored.sort(key=lambda r: (-(r.category == "consumer-tech"), -r.score))
+    # Tier S（ai-infra）> Tier A（consumer-tech）> general，同层内分数降序；超出容量的降级为 skipped
+    tier_rank = {"ai-infra": 2, "consumer-tech": 1}
+    scored.sort(key=lambda r: (-tier_rank.get(r.category, 0), -r.score))
     for i, r in enumerate(scored):
         if i >= max_accept:
             r.accepted = False

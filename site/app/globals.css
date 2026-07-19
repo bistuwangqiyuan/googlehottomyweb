@@ -266,6 +266,44 @@ a:hover {
   margin: 10px 0 4px;
 }
 
+.sponsor-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  margin-top: 28px;
+}
+
+.sponsor-card h2 {
+  border: none;
+  margin: 10px 0 8px;
+  font-size: 1.05rem;
+}
+
+.sponsor-card p {
+  color: var(--text-dim);
+  font-size: 0.92rem;
+  margin: 8px 0;
+}
+
+.sponsor-badge {
+  color: var(--accent);
+}
+
+.sponsor-disclosure {
+  font-size: 0.8rem;
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+}
+
+.footer-sponsor {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+}
+
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 28px 0 40px;

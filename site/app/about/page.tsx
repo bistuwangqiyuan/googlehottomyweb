@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SITE_NAME } from "@/lib/content";
+import { SPONSOR } from "@/lib/sponsor";
 
 export const metadata: Metadata = {
   title: "Editorial & AI policy",
@@ -57,6 +58,35 @@ export default function AboutPage() {
         them as lower bounds, never as exact counts. We do not fabricate quotes,
         numbers, or events.
       </p>
+
+      <h2 id="advertising">Advertising &amp; affiliation disclosure</h2>
+      <p>
+        This site carries one sponsored placement: <strong>{SPONSOR.name}</strong>{" "}
+        (mingxinstorage.xyz). {SPONSOR.legalNote} Because of that relationship, we
+        hold these placements to explicit rules, enforced in code:
+      </p>
+      <ul>
+        <li>
+          Every sponsored link is visibly labeled <em>Sponsored</em> and carries{" "}
+          <code>rel=&quot;sponsored&quot;</code>, so both readers and search engines
+          can tell it apart from editorial links.
+        </li>
+        <li>
+          The contextual sponsor card appears only on briefings in the
+          AI-infrastructure category, where the topic is genuinely related; it never
+          appears inside editorial text or disguised as a source.
+        </li>
+        <li>
+          Sponsor claims quote only figures the sponsor has published with
+          downloadable, signed test reports on its own site. We do not invent or
+          embellish numbers.
+        </li>
+        <li>
+          Sponsorship never influences which topics we cover, the filtering rules, or
+          the review gate. The editorial pipeline runs identically with or without
+          the placement.
+        </li>
+      </ul>
 
       <h2 id="corrections">Corrections</h2>
       <p>

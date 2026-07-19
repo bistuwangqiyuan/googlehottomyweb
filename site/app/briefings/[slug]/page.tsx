@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import SponsorCard from "@/components/SponsorCard";
 import { getAllBriefings, getBriefing, SITE_NAME, siteUrl } from "@/lib/content";
+import { isSponsorRelevant } from "@/lib/sponsor";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -146,6 +148,8 @@ export default async function BriefingPage({
           ))}
         </ol>
       </div>
+
+      {isSponsorRelevant(b.category) && <SponsorCard />}
 
       <div className="disclosure" data-testid="ai-disclosure">
         <strong>Transparency note:</strong> this briefing was assembled automatically

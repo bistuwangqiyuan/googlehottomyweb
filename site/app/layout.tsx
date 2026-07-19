@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_NAME, SITE_TAGLINE, siteUrl } from "@/lib/content";
+import { SPONSOR, sponsorUrl } from "@/lib/sponsor";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -46,6 +47,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div>
               <Link href="/privacy">Privacy</Link>
             </div>
+          </div>
+          <div className="container footer-sponsor" data-testid="footer-sponsor">
+            Sponsored (affiliated):{" "}
+            <a href={sponsorUrl("footer")} rel="sponsored noopener" target="_blank">
+              {SPONSOR.name}
+            </a>{" "}
+            — {SPONSOR.tagline}. See our{" "}
+            <Link href="/about#advertising">advertising disclosure</Link>.
           </div>
         </footer>
       </body>
