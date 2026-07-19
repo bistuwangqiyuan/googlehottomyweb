@@ -18,7 +18,13 @@ from pathlib import Path
 
 import requests
 
-GEOS = ["US", "GB", "CA", "AU", "IN", "DE", "BR", "JP"]
+# 覆盖 20 国。选择标准：主要英文市场 + 拉丁字母地区（热词与新闻标题保留
+# "Nvidia/OpenAI/ChatGPT" 等拉丁品牌名，ai-infra 词表可命中）；CJK 地区仅保留 JP
+# 作为对照——纯 CJK 关键词经 _norm_text 规范化后为空，无法参与词表匹配。
+GEOS = [
+    "US", "GB", "CA", "AU", "IN", "DE", "BR", "JP",
+    "FR", "IT", "ES", "NL", "SE", "PL", "MX", "AR", "ID", "SG", "ZA", "IE",
+]
 NS = {"ht": "https://trends.google.com/trending/rss"}
 UA = {
     "User-Agent": (

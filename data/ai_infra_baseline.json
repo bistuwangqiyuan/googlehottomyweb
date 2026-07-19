@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-19T17:20:24+00:00",
+  "generated_at_utc": "2026-07-19T17:49:34+00:00",
   "methodology": {
-    "term_list_source": "pipeline.opportunity_filter.AI_INFRA_TERMS (48 terms, single source of truth with the live filter)",
+    "term_list_source": "pipeline.opportunity_filter.AI_INFRA_TERMS (134 terms, single source of truth with the live filter)",
     "matching": "normalized phrase substring match over keyword + news titles (identical to pipeline._ai_infra_hits)",
     "dedup": "cross-geo dedup keeps highest-traffic copy (identical to pipeline)",
     "interval": "Poisson 95% CI via Wilson–Hilferty approximation, scaled to per-week",
@@ -9,11 +9,15 @@
   },
   "data": {
     "snapshot_days": 2,
-    "live_fetch": "ok (80 trends)",
-    "total_unique_keywords": 134,
-    "total_ai_infra_hits": 2,
-    "overall_hit_rate": 0.0149,
+    "live_fetch": "skipped (--no-live)",
+    "total_unique_keywords": 236,
+    "total_ai_infra_hits": 3,
+    "overall_hit_rate": 0.0127,
     "top_matched_terms": [
+      [
+        "xai",
+        2
+      ],
       [
         "openai",
         1
@@ -21,13 +25,17 @@
       [
         "grok",
         1
+      ],
+      [
+        "intelligence artificielle",
+        1
       ]
     ]
   },
   "weekly_supply_estimate": {
-    "point": 7.0,
-    "ci95_low": 0.8,
-    "ci95_high": 25.3,
+    "point": 10.5,
+    "ci95_low": 2.1,
+    "ci95_high": 30.7,
     "unit": "ai-infra briefings per week (lower-bound sampling, see caveat)"
   },
   "per_day": [
@@ -43,7 +51,8 @@
           "geo": "US",
           "traffic_lower_bound": 2000,
           "matched_terms": [
-            "openai"
+            "openai",
+            "xai"
           ],
           "news_titles": [
             "Apple Sues OpenAI, Accusing It of Stealing Company Secrets",
@@ -54,24 +63,34 @@
       ]
     },
     {
-      "snapshot_day": "live-20260719",
-      "trends_raw": 80,
-      "trends_unique_keywords": 67,
-      "ai_infra_hits": 1,
-      "hit_rate": 0.0149,
+      "snapshot_day": "archive-20260719",
+      "trends_raw": 200,
+      "trends_unique_keywords": 169,
+      "ai_infra_hits": 2,
+      "hit_rate": 0.0118,
       "hits": [
         {
           "keyword": "grok",
           "geo": "AU",
           "traffic_lower_bound": 100,
           "matched_terms": [
-            "grok"
+            "grok",
+            "xai"
           ],
           "news_titles": [
             "AI chatbot tip leads to arrest of Parkland man on child abuse, pornography charges",
             "xAI can’t deny Grok makes CSAM anymore. So it’s suing users.",
             "‘A scary time’: Parents urged to watch what they post after case alleging AI child sex abuse images"
           ]
+        },
+        {
+          "keyword": "intelligence artificielle",
+          "geo": "FR",
+          "traffic_lower_bound": 1000,
+          "matched_terms": [
+            "intelligence artificielle"
+          ],
+          "news_titles": []
         }
       ]
     }

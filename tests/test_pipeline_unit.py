@@ -174,6 +174,20 @@ def test_ai_infra_phrase_match():
         assert len(accepted) == 1 and accepted[0].category == "ai-infra"
 
 
+def test_ai_infra_exempt_from_min_traffic():
+    """ai-infra 类豁免流量门槛；同量级的 general 词仍被拒。"""
+    with tempfile.TemporaryDirectory() as d:
+        news = [NewsItem(title="Nvidia data center revenue update", url="https://e.com/a", source="E")]
+        res = _filter(
+            [make_trend("nvidia h100 supply", traffic=200, news=news),
+             make_trend("random village fair", traffic=200)],
+            Path(d), min_traffic=500,
+        )
+        by_kw = {r.trend.keyword: r for r in res}
+        assert by_kw["nvidia h100 supply"].accepted and by_kw["nvidia h100 supply"].category == "ai-infra"
+        assert not by_kw["random village fair"].accepted and "low-volume" in by_kw["random village fair"].reason
+
+
 def test_ai_infra_outranks_consumer_tech():
     """容量受限时 Tier S（ai-infra）优先于流量更高的 Tier A（consumer-tech）。"""
     with tempfile.TemporaryDirectory() as d:

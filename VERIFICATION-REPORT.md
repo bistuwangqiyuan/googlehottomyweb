@@ -129,6 +129,18 @@ python scripts/11_verify_doc_consistency.py    # 文档数字逐条核对
 
 `data/ai_infra_baseline.json`（2026-07-19 生成，任何第三方可重跑）：2 个快照日（2026-07-14 归档 + 2026-07-19 实时）共 134 个去重热词中命中 ai-infra 2 个（命中率 1.49%），换算每周供给点估计 7.0 篇、Poisson 95% 置信区间 **0.8–25.3 篇/周**。方法学注记：RSS 快照为时点采样（每国约 25 条），非全天热词流，因此该基线是保守下界。
 
+### 3.1 供给提升迭代（同日第二轮）
+
+初版命中率约 1.5%、供给点估计 7 篇/周偏低，根因是数据源结构性偏差（Trending Now 由体育/影视主导）。按"分母不可控、扩大捕获面"思路做了三项改进，全部有单测/基线数据支撑：
+
+1. **抓取覆盖 8 → 20 国**（`pipeline/fetch_trends.py`）：新增 FR/IT/ES/NL/SE/PL/MX/AR/ID/SG/ZA/IE，全部为拉丁字母地区（品牌名 Nvidia/OpenAI/ChatGPT 在其新闻标题中保留原文，词表可命中）；刻意不加 KR/TW——纯 CJK 关键词经规范化后为空，无法匹配，只会稀释站点内容。
+2. **词表 30 → 约 100 词**（`AI_INFRA_TERMS`）：补芯片厂商（AMD/Intel/Micron/SK Hynix/Broadcom/TSMC 产品线）、模型与组织（ChatGPT/Copilot/Perplexity/xAI 等）、基础设施（GPU cluster/liquid cooling/CoreWeave/Stargate 等）及 9 种覆盖语言的本地语 AI/算力词（如 "intelligence artificielle"、"inteligencia artificial"、"rechenzentrum"）。精度优先：排除 "arm"、"gemini"（星座）、"sora"（人名）等高歧义单词，歧义品牌用限定短语；初版实测发现 "llama" 误报（西语足球新闻动词 "llama"=呼喊），已改为 "meta llama"/"llama 3"/"llama 4"。
+3. **ai-infra 豁免流量门槛**（`opportunity_filter.py`）：此类词量级天然低于大众热词，500+ 门槛会漏掉稀缺目标词；豁免仅限流量维度，合规黑名单、具名来源、去重、审核关口一律不豁免（新增单测 `test_ai_infra_exempt_from_min_traffic`）。
+
+**实测效果**（重跑基线，含 12 新国当日快照）：总命中 2 → 3、每周供给点估计 **7.0 → 10.5 篇**、95% CI 收窄抬升至 **2.1–30.7 篇/周**；20 国单快照去重热词 169 个（8 国口径为 67 个，采样面扩大 2.5 倍）。20 国实时全链干跑验证通过（200 条热词，"grok" 以 ai-infra 类第一优先入选）。如实说明：命中率百分比（1.27%）不升反微降，因为分母（大众热词）随 geo 扩张同步增长——正确的 KPI 是**每周绝对供给篇数**，而非百分比。
+
+**评估过但未采纳的杠杆**：将 cron 从 6h 加密到 3h 可再翻倍采样面，但每轮发布上限 5 篇不变时会成倍增加低价值大众话题页面，触碰 Google 规模化内容滥用（scaled content abuse）红线，得不偿失，暂不采纳；若后续需要，正确做法是"加频 + 收紧 general 类发布配额"同步实施。
+
 ## 四、诚实边界
 
 - 站点处于流量冷启动期（vercel.app 子域名、上线数日、尚无搜索排名），导流机制的价值随 SEO 积累释放，**不承诺任何短期流量数字**。

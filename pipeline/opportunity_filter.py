@@ -56,19 +56,45 @@ BLACKLIST: dict[str, list[str]] = {
 # 支持多词短语；匹配方式与黑名单一致（规范化后子串匹配 keyword + 新闻标题）。
 # 词表选择依据：铭信业务域（存储加速 / 国产算力 / 算力中心）+ AI 基础设施公共话题词，
 # 命中率基线见 scripts/12_ai_infra_keyword_baseline.py（可复现）。
+# 精度优先原则：只收在新闻语境下几乎无歧义的词；刻意排除高歧义单词
+# （如 "arm"=手臂、"gemini"=星座、"sora" 单用、"kimi"=人名、"fab"），
+# 歧义品牌用限定短语（"google gemini"、"moonshot ai"、"mistral ai"）。
 AI_INFRA_TERMS = [
-    # 芯片与算力硬件
-    "gpu", "nvidia", "h100", "h200", "b200", "gb200", "blackwell", "rubin",
-    "tpu", "ai chip", "ai chips", "ai accelerator", "semiconductor", "tsmc",
-    "hbm", "cuda", "ascend", "instinct", "mi300", "mi308",
-    # 大模型与推理
-    "llm", "large language model", "ai model", "model training", "inference",
-    "openai", "anthropic", "deepseek", "qwen", "mistral ai", "frontier model",
-    "gpt 5", "gpt5", "claude", "grok", "llama",
+    # 芯片与算力硬件（厂商 / 产品 / 部件）
+    "gpu", "nvidia", "h100", "h200", "b200", "b300", "gb200", "gb300", "gh200",
+    "blackwell", "nvidia rubin", "dgx", "geforce rtx",
+    "tpu", "npu", "ai chip", "ai chips", "ai accelerator", "ai accelerators",
+    "semiconductor", "semiconductors", "tsmc", "sk hynix", "micron", "broadcom",
+    "qualcomm", "snapdragon", "amd", "intel", "arm holdings",
+    "hbm", "hbm3", "hbm3e", "hbm4", "cuda", "ascend", "instinct",
+    "mi300", "mi308", "mi325", "mi355", "trainium", "inferentia",
+    "cerebras", "groq", "sambanova", "graphcore", "chip plant", "chip factory",
+    "chipmaker", "chip maker", "foundry", "wafer",
+    # 大模型与推理（组织 / 模型 / 概念）
+    "llm", "large language model", "large language models", "ai model", "ai models",
+    "model training", "inference", "openai", "anthropic", "deepseek", "qwen",
+    "mistral ai", "moonshot ai", "frontier model", "artificial intelligence",
+    "generative ai", "genai", "agi", "chatgpt", "gpt 5", "gpt5", "gpt 6",
+    "claude", "grok", "meta llama", "llama 3", "llama 4",
+    "google gemini", "gemini ai", "copilot",
+    "perplexity", "hugging face", "stability ai", "meta ai", "xai",
+    "openai sora", "midjourney",
     # 数据中心与存储基础设施
-    "data center", "data centers", "datacenter", "supercomputer", "ai server",
+    "data center", "data centers", "datacenter", "datacenters", "data centre",
+    "data centres", "supercomputer", "supercomputers", "ai server", "ai servers",
     "nvme", "ssd", "flash storage", "ai infrastructure", "compute cluster",
-    "colocation", "hyperscaler",
+    "gpu cluster", "colocation", "hyperscaler", "hyperscale", "server farm",
+    "liquid cooling", "coreweave", "nebius", "lambda labs", "stargate",
+    "colossus", "kv cache", "object storage",
+    # 行业事件
+    "gtc", "computex",
+    # 覆盖地区的本地语言 AI/算力词（与英文词同一匹配口径；normalization 两侧一致，
+    # 含变音符的词照常工作）
+    "inteligencia artificial", "inteligência artificial", "intelligence artificielle",
+    "intelligenza artificiale", "künstliche intelligenz", "sztuczna inteligencja",
+    "kunstmatige intelligentie", "kecerdasan buatan", "artificiell intelligens",
+    "centro de datos", "centros de datos", "centro de dados", "rechenzentrum",
+    "datacentrum",
 ]
 
 # ---------- 意图评分词表（消费科技/产品意图 → Tier A，商业价值更高） ----------
@@ -191,7 +217,8 @@ def filter_trends(
         if not t.news:
             results.append(FilterResult(t, False, "C5-sources: no named news source in feed"))
             continue
-        if (t.traffic_lower_bound or 0) < min_traffic:
+        # ai-infra 词量级天然低于大众热词，豁免流量门槛（其余合规/来源/去重关口不变）
+        if (t.traffic_lower_bound or 0) < min_traffic and not _ai_infra_hits(t):
             results.append(FilterResult(t, False, f"low-volume: {t.traffic_lower_bound} < {min_traffic}"))
             continue
         if k in recent:

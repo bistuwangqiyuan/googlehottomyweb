@@ -34,16 +34,19 @@ python tests/e2e_site.py --base-url https://trendflow-site.vercel.app   # 对线
 全部环节自动化、有测试断言保障（`VERIFICATION-REPORT.md` 第三部分）：
 
 - **垂直内容线**：机会过滤器新增 `ai-infra` 层（Tier S，优先级最高）——命中 AI 基础设施
-  词表（GPU/LLM/推理/数据中心/NVMe 等，见 `pipeline/opportunity_filter.py` 的
-  `AI_INFRA_TERMS`）的热词优先发布；
+  词表（约 100 词：芯片厂商/产品、大模型、数据中心存储，含 9 种覆盖语言的本地语
+  AI/算力词，见 `pipeline/opportunity_filter.py` 的 `AI_INFRA_TERMS`）的热词优先发布，
+  并豁免 500+ 流量门槛（此类词量级天然偏低；合规黑名单与审核关口不豁免）；
+  抓取覆盖 20 国（8 原有 + 12 拉丁字母地区）；
 - **上下文赞助卡**：仅在 `ai-infra` 类简报页出现，可见 "Sponsored · Affiliated" 标注，
   文案只引用铭信官网已公开的签字级实测口径；
 - **全站页脚披露位**：轻量一行，同样明示 Sponsored 与关联关系；
 - **合规三要素**（E2E 断言强制）：可见标注 + `rel="sponsored"` + UTM 归因参数
   （`utm_source=trendflow`，在铭信站点侧可测量）；`/about#advertising` 公开完整披露政策；
 - **供给基线（可复现）**：`python scripts/12_ai_infra_keyword_baseline.py` 输出
-  `data/ai_infra_baseline.json`——基于 RSS 快照实测 ai-infra 热词命中率并给出每周供给
-  的 95% 置信区间（区间表达，不作点断言）。
+  `data/ai_infra_baseline.json`——基于 RSS 快照实测 ai-infra 热词命中并给出每周供给
+  的 95% 置信区间（区间表达，不作点断言）。当前基线（2 快照日、20 国词表扩展后）：
+  每周供给点估计 10.5 篇、95% CI 2.1–30.7 篇（时点采样保守下界）。
 
 诚实边界：站点当前处于流量冷启动期（vercel.app 子域名、上线数日），导流量随 SEO 积累
 增长，本仓库不承诺任何短期流量数字；导流点击的最终测量在铭信站点侧（UTM 归因）。
