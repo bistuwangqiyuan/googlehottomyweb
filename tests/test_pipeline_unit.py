@@ -268,7 +268,9 @@ def test_llm_mode_fails_closed_without_reviewer():
     art = generate_briefing(t, "consumer-tech")
     art["mode"] = "llm"  # 模拟 LLM 内容但没有配置独立审核模型
     import os
-    saved = {k: os.environ.pop(k, None) for k in ("LLM_API_KEY", "REVIEW_API_KEY")}
+    saved = {k: os.environ.pop(k, None)
+             for k in ("LLM_API_KEY", "REVIEW_API_KEY",
+                       "LLM_FALLBACK_API_KEY", "REVIEW_FALLBACK_API_KEY")}
     try:
         r = review(art)
         assert not r["approved"] and "no review key" in r["notes"], r["notes"]

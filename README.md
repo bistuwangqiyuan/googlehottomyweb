@@ -26,7 +26,16 @@ python tests/e2e_site.py               # 本地生产模式全套 E2E（需先 c
 python tests/e2e_site.py --base-url https://trendflow-site.vercel.app   # 对线上跑同一套
 ```
 
-上线自动化与仅剩的人工步骤（域名付款、可选 LLM key）见 `GO-LIVE-CHECKLIST.md`。
+上线自动化与仅剩的人工步骤（域名付款）见 `GO-LIVE-CHECKLIST.md`。
+
+## LLM 双模型关口（已启用，2026-07-19）
+
+流水线运行于 **llm 模式**：智谱 `glm-4.6` 成稿 → 规则审核 → 通义 `qwen-max`
+独立审核（跨厂商双模型，评分阈值 0.75），两环节各配月之暗面 `moonshot-v1-32k`
+备用降级；全链失败时生成回退确定性简报模板、审核 fail-closed。供应商选型
+基于实测探测（`scripts/13_llm_provider_probe.py` → `data/llm_provider_probe.json`）：
+9 家候选中 3 家可用（智谱/月之暗面/通义），其余因余额不足、key 无效或平台下线
+如实记录在探测结果中。key 仅存于 GitHub Actions secrets，不入仓库。
 
 ## AI/算力垂直线与合规导流（铭信）
 

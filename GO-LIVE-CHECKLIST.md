@@ -30,19 +30,20 @@ $env:PORKBUN_SECRET_KEY = "sk1_..."
 > 若是全新账户，先在网页上注册选定域名（脚本 `--dry-run` 会告诉你哪个可用、多少钱），
 > 之后 DNS/绑定仍由脚本完成。
 
-## 人工步骤 3（可选）：LLM key（约 2 分钟）
+## 人工步骤 3：LLM key —— ✅ 已完成（2026-07-19）
 
-不配置时流水线以**简报模式**运行（确定性模板、零编造，已通过全部测试）。
-配置后自动切换 AI 成稿 + 第二模型独立审核：
+已配置为 AI 成稿 + 独立第二模型审核 + 宕机降级链（探测记录
+`data/llm_provider_probe.json`，任何人可用自己的 key 重跑
+`scripts/13_llm_provider_probe.py` 复现选型）：
 
-在 GitHub 仓库 Settings → Secrets and variables → Actions 添加：
+| Secret | 当前值 | 角色 |
+|---|---|---|
+| `LLM_API_KEY/_BASE_URL/_MODEL` | 智谱 `glm-4.6` | 成稿主力 |
+| `LLM_FALLBACK_*` | 月之暗面 `moonshot-v1-32k` | 成稿备用 |
+| `REVIEW_API_KEY/_BASE_URL/_MODEL` | 通义 `qwen-max` | 独立审核（与成稿不同厂商） |
+| `REVIEW_FALLBACK_*` | 月之暗面 `moonshot-v1-32k` | 审核备用 |
 
-| Secret | 说明 |
-|---|---|
-| `LLM_API_KEY` | OpenAI 兼容 API key（DeepSeek/OpenAI/任意兼容网关） |
-| `LLM_BASE_URL` | 可选，默认 `https://api.openai.com/v1` |
-| `LLM_MODEL` | 可选，默认 `gpt-4o-mini` |
-| `REVIEW_MODEL` | 可选，独立审核模型，默认 `gpt-4o`（建议与成稿模型不同） |
+全链失败时：生成回退确定性简报模板（零编造），LLM 内容审核 fail-closed 拒发。
 
 ## 凭据就位后：一条命令上线
 

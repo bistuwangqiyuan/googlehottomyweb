@@ -38,6 +38,26 @@ def review_config() -> dict | None:
     }
 
 
+def review_configs() -> list[dict]:
+    """审核用供应商链：主审 + 可选备审（REVIEW_FALLBACK_*）。
+
+    全链失败仍然 fail-closed（llm 模式内容一律拒发）。备审可能与生成方
+    是同一厂商（仅在主审宕机的降级场景），规则审核与阈值关口不变。
+    """
+    configs = []
+    primary = review_config()
+    if primary:
+        configs.append(primary)
+    fb_key = os.environ.get("REVIEW_FALLBACK_API_KEY", "").strip()
+    if fb_key:
+        configs.append({
+            "api_key": fb_key,
+            "base_url": os.environ.get("REVIEW_FALLBACK_BASE_URL", "https://api.openai.com/v1").rstrip("/"),
+            "model": os.environ.get("REVIEW_FALLBACK_MODEL", "gpt-4o"),
+        })
+    return configs
+
+
 def _article_text(article: dict) -> str:
     parts = [article.get("title", ""), article.get("description", "")]
     for s in article.get("sections", []):
@@ -157,21 +177,28 @@ def review(article: dict) -> dict:
 
     if article.get("mode") == "llm":
         mode = "llm"
-        cfg = review_config()
+        cfgs = review_configs()
         if not rules_ok:
             approved = False
-        elif cfg is None:
+        elif not cfgs:
             approved = False
             notes = "llm-mode content requires an independent LLM reviewer but no review key configured"
         else:
-            try:
-                llm_ok, llm_score, llm_notes = llm_review(article, cfg)
-                approved = rules_ok and llm_ok
-                score = round((rules_score + llm_score) / 2, 4)
-                notes = f"rules: {notes} | reviewer({cfg['model']}): {llm_notes}"
-            except Exception as exc:
+            approved = False
+            last_exc: Exception | None = None
+            for cfg in cfgs:
+                try:
+                    llm_ok, llm_score, llm_notes = llm_review(article, cfg)
+                    approved = rules_ok and llm_ok
+                    score = round((rules_score + llm_score) / 2, 4)
+                    notes = f"rules: {notes} | reviewer({cfg['model']}): {llm_notes}"
+                    last_exc = None
+                    break
+                except Exception as exc:
+                    last_exc = exc
+            if last_exc is not None:
                 approved = False
-                notes = f"llm reviewer unavailable, fail-closed: {exc}"
+                notes = f"all llm reviewers unavailable, fail-closed: {last_exc}"
 
     return {
         "approved": approved,

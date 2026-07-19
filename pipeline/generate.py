@@ -34,6 +34,25 @@ def llm_config() -> dict | None:
     }
 
 
+def llm_configs() -> list[dict]:
+    """生成用供应商链：主力 + 可选备用（LLM_FALLBACK_*），依次尝试。
+
+    全部失败时 generate() 回退确定性 briefing 模式，24/7 无人值守不中断。
+    """
+    configs = []
+    primary = llm_config()
+    if primary:
+        configs.append(primary)
+    fb_key = os.environ.get("LLM_FALLBACK_API_KEY", "").strip()
+    if fb_key:
+        configs.append({
+            "api_key": fb_key,
+            "base_url": os.environ.get("LLM_FALLBACK_BASE_URL", "https://api.openai.com/v1").rstrip("/"),
+            "model": os.environ.get("LLM_FALLBACK_MODEL", "gpt-4o-mini"),
+        })
+    return configs
+
+
 def _fmt_traffic(n: int | None) -> str:
     return f"{n:,}" if n else "an unreported number of"
 
@@ -202,10 +221,9 @@ def generate_llm(t: Trend, category: str, cfg: dict) -> dict:
 
 
 def generate(t: Trend, category: str) -> dict:
-    cfg = llm_config()
-    if cfg:
+    for cfg in llm_configs():
         try:
             return generate_llm(t, category, cfg)
         except Exception as exc:
-            print(f"[generate] LLM mode failed for '{t.keyword}' ({exc}); falling back to briefing mode")
+            print(f"[generate] LLM ({cfg['model']}) failed for '{t.keyword}' ({exc}); trying next")
     return generate_briefing(t, category)

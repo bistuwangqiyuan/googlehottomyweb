@@ -1,0 +1,83 @@
+{
+  "probed_at_utc": "2026-07-19T19:33:38+00:00",
+  "method": "identical request shape to pipeline.generate/review (OpenAI-compatible chat/completions + response_format=json_object)",
+  "results": [
+    {
+      "usable": false,
+      "latency_s": 1.02,
+      "error": "HTTP 402: {\"error\":{\"message\":\"Insufficient Balance\",\"type\":\"unknown_error\",\"param\":null,\"code\":\"invalid_request_error\"}}",
+      "provider": "deepseek",
+      "base_url": "https://api.deepseek.com/v1",
+      "model": "deepseek-chat",
+      "key_fingerprint": "sk-6d326..."
+    },
+    {
+      "usable": true,
+      "latency_s": 2.12,
+      "sample": "{\"ok\":true,\"model_family\":\"Language Model\"}",
+      "provider": "glm (zhipu)",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "model": "glm-4-flash",
+      "key_fingerprint": "1cf8de9e..."
+    },
+    {
+      "usable": true,
+      "latency_s": 1.78,
+      "sample": "{\"ok\": true, \"model_family\": \"General Knowledge\"}",
+      "provider": "moonshot",
+      "base_url": "https://api.moonshot.cn/v1",
+      "model": "moonshot-v1-8k",
+      "key_fingerprint": "sk-M2vL6..."
+    },
+    {
+      "usable": true,
+      "latency_s": 1.78,
+      "sample": "{\"ok\": true, \"model_family\": \"Qwen\"}",
+      "provider": "tongyi (dashscope)",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen-plus",
+      "key_fingerprint": "sk-5354e..."
+    },
+    {
+      "usable": false,
+      "latency_s": 0.93,
+      "error": "HTTP 400: {\"error\":{\"id\":\"5b92a9dffc9e43584f561135b4126b6e\",\"message\":\"该模型已下线，请根据迁移指南前往TokenHub平台体验最新模型服务。（详见：https://cloud.tencent.com/document/product/1729/131925）\",\"type\":\"runtime_error\",\"param\":null,\"code\":\"2030\"}}",
+      "provider": "tencent hunyuan",
+      "base_url": "https://api.hunyuan.cloud.tencent.com/v1",
+      "model": "hunyuan-turbos-latest",
+      "key_fingerprint": "sk-9oEqz..."
+    },
+    {
+      "usable": false,
+      "latency_s": 0.98,
+      "error": "HTTP 500: {\"error\":{\"message\":\"AppIdNoAuthError (sid: cha000bbb8a@dx19f7bdea5e1b8f3812)\",\"type\":\"api_error\",\"param\":null,\"code\":\"11200\"}}",
+      "provider": "spark (iflytek)",
+      "base_url": "https://spark-api-open.xf-yun.com/v1",
+      "model": "generalv3.5",
+      "key_fingerprint": "DdOqdySd..."
+    },
+    {
+      "usable": false,
+      "latency_s": 0.88,
+      "error": "HTTP 403: {\"error\":{\"code\":\"AccountOverdueError\",\"message\":\"The request failed because your account has an overdue balance. Request id: 02178448961776284888bb83e57e5fbf0ee20dce84dcf9751a913\",\"param\":\"\",\"type\":\"Forbidden\"}}",
+      "provider": "doubao (ark)",
+      "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+      "model": "doubao-1-5-pro-32k-250115",
+      "key_fingerprint": "414f57a5..."
+    },
+    {
+      "usable": false,
+      "latency_s": 0.6,
+      "error": "HTTP 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"invalid x-api-key\"},\"request_id\":\"req_011CdByXCshfL3qgUW7m8rGL\"}",
+      "provider": "anthropic",
+      "key_fingerprint": "sk-ant-s..."
+    },
+    {
+      "usable": false,
+      "latency_s": 0.48,
+      "error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"",
+      "provider": "gemini",
+      "key_fingerprint": "AIzaSyB5..."
+    }
+  ]
+}

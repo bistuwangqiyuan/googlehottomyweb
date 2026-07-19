@@ -30,13 +30,21 @@ jobs:
 
       - name: Run content pipeline
         env:
-          # 未配置 secrets 时自动以简报模式运行（无编造风险的确定性模板）
+          # 未配置 secrets 时自动以简报模式运行（无编造风险的确定性模板）。
+          # 生成与主审用不同厂商（独立双模型关口）；FALLBACK 为宕机降级链，
+          # 全链失败时生成回退确定性模板、审核 fail-closed。
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
           LLM_MODEL: ${{ secrets.LLM_MODEL }}
+          LLM_FALLBACK_API_KEY: ${{ secrets.LLM_FALLBACK_API_KEY }}
+          LLM_FALLBACK_BASE_URL: ${{ secrets.LLM_FALLBACK_BASE_URL }}
+          LLM_FALLBACK_MODEL: ${{ secrets.LLM_FALLBACK_MODEL }}
           REVIEW_API_KEY: ${{ secrets.REVIEW_API_KEY }}
           REVIEW_BASE_URL: ${{ secrets.REVIEW_BASE_URL }}
           REVIEW_MODEL: ${{ secrets.REVIEW_MODEL }}
+          REVIEW_FALLBACK_API_KEY: ${{ secrets.REVIEW_FALLBACK_API_KEY }}
+          REVIEW_FALLBACK_BASE_URL: ${{ secrets.REVIEW_FALLBACK_BASE_URL }}
+          REVIEW_FALLBACK_MODEL: ${{ secrets.REVIEW_FALLBACK_MODEL }}
         # --max-publish 仅约束非 ai-infra 类（大众/消费科技）；ai-infra 全量放行。
         # 加密采样频率（6h→2h）的同时把大众类配额 5→3，总量受 7 天去重窗自然约束
         run: python -m pipeline.run_pipeline --max-publish 3
