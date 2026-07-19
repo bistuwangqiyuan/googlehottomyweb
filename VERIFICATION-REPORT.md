@@ -123,7 +123,7 @@ python scripts/11_verify_doc_consistency.py    # 文档数字逐条核对
 | 流水线单元测试（含新增 3 项 ai-infra 分类/短语匹配/优先级断言） | **21/21 通过** |
 | 离线 fixture 干跑（`--dry-run --fixture-dir tests/fixtures`） | 退出码 0，4 篇过审 |
 | 本地生产模式 E2E（新增页脚赞助位三要素、赞助卡当且仅当 ai-infra、/about 披露章节断言） | **399/399 通过** |
-| 真实线上 E2E（https://trendflow-site.vercel.app） | 见下方"上线回归"行 |
+| 真实线上 E2E（https://trendflow-site.vercel.app ，git push 后 Vercel 自动部署约 40s 完成，随后全量回归） | **527/527 通过，退出码 0** |
 
 ## 三、供给基线（实测，可复现）
 
