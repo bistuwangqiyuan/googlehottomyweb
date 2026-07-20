@@ -80,12 +80,13 @@ jobs:
             echo "slug=$slug" >> "$GITHUB_OUTPUT"
           fi
 
-      # Vercel 的 Git 集成构建偶发卡死（状态 UNKNOWN 不出错也不完成，2026-07-19 实测多次）。
-      # 看门狗：等 Git 集成部署生效；超时未生效则用 Deploy Hook 强制重建，再验证一轮。
+      # Vercel 的 Git 集成部署与 Deploy Hook 均实测过不可靠（2026-07-20：webhook 推送
+      # 不再建部署、hook 返回 PENDING job 但从不生成部署）。看门狗：先等 Git 集成生效；
+      # 超时则直接经 Vercel REST API 从 git 源强制创建生产部署（实测该路径稳定 READY）。
       - name: Deploy watchdog (Vercel stuck-build fallback)
         if: steps.commit.outputs.pushed == 'true' && steps.commit.outputs.slug != ''
         env:
-          DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           SLUG: ${{ steps.commit.outputs.slug }}
         run: |
           url="https://trendflow-site.vercel.app/briefings/${SLUG}"
@@ -100,11 +101,23 @@ jobs:
           }
           echo "waiting for git-integration deploy of $url"
           if check 6; then echo "deploy verified"; exit 0; fi
-          if [ -z "$DEPLOY_HOOK_URL" ]; then
-            echo "::warning::deploy not live after 3min and no VERCEL_DEPLOY_HOOK_URL configured"
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "::warning::deploy not live after 3min and no VERCEL_TOKEN configured"
             exit 0
           fi
-          echo "git-integration deploy stuck; triggering fallback deploy hook"
-          curl -s -X POST "$DEPLOY_HOOK_URL" > /dev/null
+          echo "git-integration deploy stuck; creating deployment via Vercel API"
+          team_id=$(curl -s -H "Authorization: Bearer $VERCEL_TOKEN" \
+            "https://api.vercel.com/v2/teams" | python3 -c \
+            "import json,sys; print(json.load(sys.stdin)['teams'][0]['id'])")
+          repo_id=$(curl -s -H "Authorization: Bearer $VERCEL_TOKEN" \
+            "https://api.vercel.com/v9/projects/trendflow-site?teamId=$team_id" \
+            | python3 -c "import json,sys; print(json.load(sys.stdin)['link']['repoId'])")
+          dep=$(curl -s -X POST -H "Authorization: Bearer $VERCEL_TOKEN" \
+            -H "Content-Type: application/json" \
+            "https://api.vercel.com/v13/deployments?teamId=$team_id&forceNew=1" \
+            -d "{\"name\":\"trendflow-site\",\"target\":\"production\",
+                 \"gitSource\":{\"type\":\"github\",\"repoId\":$repo_id,\"ref\":\"master\"}}")
+          echo "$dep" | python3 -c \
+            "import json,sys; d=json.load(sys.stdin); print('api deployment:', d.get('id'), d.get('readyState', d.get('error')))"
           if check 10; then echo "fallback deploy verified"; exit 0; fi
-          echo "::warning::content still not live after fallback deploy; will self-heal on next run"
+          echo "::warning::content still not live after API deploy; will self-heal on next run"
