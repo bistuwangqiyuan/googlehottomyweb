@@ -17,7 +17,9 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # LLM 模式高产轮次（如 13 篇 ai-infra）成稿+审核可达 15 分钟，加看门狗最长 8 分钟，
+    # 20 分钟上限实测会把正常运行掐死在推送/看门狗阶段（2026-07-20 定时轮被取消）
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
 
@@ -64,8 +66,16 @@ jobs:
             slug=$(git diff --cached --name-only --diff-filter=A -- site/content/briefings \
                    | head -n1 | xargs -r basename | sed 's/\.json$//')
             git commit -m "content: automated pipeline run $(date -u +%Y-%m-%dT%H:%MZ)"
-            git pull --rebase origin ${GITHUB_REF_NAME}
-            git push origin HEAD:${GITHUB_REF_NAME}
+            # 并发轮次可能发布相同热词文件（add/add 冲突）。rebase 时 -X theirs
+            # 取本次成稿版本（两版语义等价，均已过审），失败则 abort 重试，最多 3 次
+            n=0
+            until git pull --rebase -X theirs origin ${GITHUB_REF_NAME} \
+                  && git push origin HEAD:${GITHUB_REF_NAME}; do
+              n=$((n+1))
+              if [ "$n" -ge 3 ]; then echo "::error::push failed after 3 attempts"; exit 1; fi
+              git rebase --abort 2>/dev/null || true
+              sleep 15
+            done
             echo "pushed=true" >> "$GITHUB_OUTPUT"
             echo "slug=$slug" >> "$GITHUB_OUTPUT"
           fi
