@@ -128,6 +128,28 @@ def run_assertions(base: str, admin_user: str | None, admin_pass: str | None) ->
         check(f"briefing {name}: canonical link", 'rel="canonical"' in r.text, "missing")
         check(f"briefing {name}: og:title", 'property="og:title"' in r.text, "missing")
 
+    # ---------- AI 基础设施垂直枢纽页 ----------
+    r, _ = get(base, "/ai-infrastructure")
+    check("ai-infra hub: 200", r.status_code == 200, f"got {r.status_code}")
+    if r.status_code == 200:
+        check("ai-infra hub: sponsor module labeled + rel=sponsored + UTM",
+              'data-testid="sponsor-card"' in r.text
+              and "Sponsored · Affiliated" in r.text
+              and 'rel="sponsored noopener"' in r.text
+              and "utm_source=trendflow" in r.text,
+              "missing label/rel/UTM")
+        hub_links = set(re.findall(r'href="(/briefings/[^"#]+)"', r.text))
+        for h in sorted(hub_links):
+            r2, _ = get(base, h)
+            check(f"ai-infra hub link reachable: {h.rsplit('/', 1)[-1][:48]}",
+                  r2.status_code == 200, f"got {r2.status_code}")
+        try:
+            lds = extract_jsonld(r.text)
+            check("ai-infra hub: CollectionPage JSON-LD",
+                  any(d.get("@type") == "CollectionPage" for d in lds), str(lds)[:200])
+        except Exception as exc:
+            check("ai-infra hub: CollectionPage JSON-LD", False, f"invalid JSON-LD: {exc}")
+
     # ---------- 合规页面 ----------
     r, _ = get(base, "/about")
     check("about: 200", r.status_code == 200, f"got {r.status_code}")

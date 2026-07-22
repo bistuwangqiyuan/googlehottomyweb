@@ -13,6 +13,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
   return [
     { url: base, lastModified: new Date(), changeFrequency: "hourly", priority: 1 },
+    {
+      url: `${base}/ai-infrastructure`,
+      lastModified: new Date(),
+      changeFrequency: "hourly",
+      priority: 0.9,
+    },
     { url: `${base}/about`, changeFrequency: "monthly", priority: 0.4 },
     { url: `${base}/privacy`, changeFrequency: "yearly", priority: 0.2 },
     ...briefings,

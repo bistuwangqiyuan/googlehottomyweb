@@ -57,9 +57,19 @@ python tests/e2e_site.py --base-url https://trendflow-site.vercel.app   # 对线
   `data/ai_infra_baseline.json`——基于 RSS 快照实测 ai-infra 热词命中并给出每周供给
   的 95% 置信区间（区间表达，不作点断言）。当前基线（2 快照日、20 国词表扩展后）：
   每周供给点估计 10.5 篇、95% CI 2.1–30.7 篇（时点采样保守下界）。
+- **垂直枢纽页** `/ai-infrastructure`：聚合全部 ai-infra 简报的收录入口（CollectionPage
+  结构化数据 + sitemap 高优先级 + 顶部同规格合规赞助卡），集中垂直线内链权重；
+- **导流监控（自动化时间序列）**：`python scripts/14_referral_monitor.py` 对线上站点
+  实测供给侧指标——线上 ai-infra 简报数、赞助触点数（上下文卡/枢纽页/页脚）、合规
+  三要素逐页核验、铭信落地页可达性——快照追加至 `data/referral_monitor.jsonl`（逐条
+  可审计），最新一次在 `data/referral_monitor_latest.json`；GitHub Actions 每天两次
+  自动运行并入库（`.github/workflows/referral-monitor.yml`），合规缺失时工作流告警。
+  首次实测（2026-07-22）：线上 117 篇简报、31 篇 ai-infra 且赞助卡全部合规、
+  页脚披露位合规、铭信落地页（含 UTM）HTTP 200。
 
 诚实边界：站点当前处于流量冷启动期（vercel.app 子域名、上线数日），导流量随 SEO 积累
-增长，本仓库不承诺任何短期流量数字；导流点击的最终测量在铭信站点侧（UTM 归因）。
+增长，本仓库不承诺任何短期流量数字；导流点击的最终测量在铭信站点侧（UTM 归因，
+utm_source=trendflow），本仓库监控的是供给侧曝光与合规状态。
 
 ## 目录结构
 

@@ -32,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </Link>
             <nav className="nav">
               <Link href="/">Briefings</Link>
+              <Link href="/ai-infrastructure">AI Infrastructure</Link>
               <Link href="/about">Editorial policy</Link>
               <Link href="/feed.xml">RSS</Link>
             </nav>
