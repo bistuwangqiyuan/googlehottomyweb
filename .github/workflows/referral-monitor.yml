@@ -5,7 +5,9 @@ name: referral-monitor
 # 形成任何人可查证的时间序列。点击/转化归因在铭信站点侧（UTM），此处不采集。
 on:
   schedule:
-    - cron: "43 3,15 * * *"
+    # 每 6 小时一次（4 次/天）：与逐小时内容流水线配套的监控密度；
+    # 每次至多 1 次数据推送（触发 1 次 Vercel 构建），部署预算内
+    - cron: "43 */6 * * *"
   workflow_dispatch: {}
 
 permissions:

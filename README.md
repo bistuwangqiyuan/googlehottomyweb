@@ -47,7 +47,9 @@ python tests/e2e_site.py --base-url https://trendflow-site.vercel.app   # 对线
   大模型与 AI 组织/人物、数据中心/HPC/云，含 9 种覆盖语言的本地语词，见
   `pipeline/opportunity_filter.py` 的 `AI_INFRA_TERMS`）的热词：**豁免流量门槛 +
   不占发布容量**（通过合规关口即全量放行；黑名单/具名来源/去重/审核关口不豁免）；
-  抓取覆盖 20 国、每 2 小时采样一次（大众类每轮限 3 篇，总量受 7 天去重窗约束）；
+  抓取覆盖 40 国、**每小时采样一次（24/7 最高密度）**——热词榜单数小时轮换，
+  逐小时采样把 ai-infra 机会窗口漏检降到最低（大众类每轮限 2 篇，遵循"加频必
+  收紧大众配额"原则，总量受 7 天去重窗约束）；
 - **上下文赞助卡**：仅在 `ai-infra` 类简报页出现，可见 "Sponsored · Affiliated" 标注，
   文案只引用铭信官网已公开的签字级实测口径；
 - **全站页脚披露位**：轻量一行，同样明示 Sponsored 与关联关系；
@@ -61,8 +63,8 @@ python tests/e2e_site.py --base-url https://trendflow-site.vercel.app   # 对线
   结构化数据 + sitemap 高优先级 + 顶部同规格合规赞助卡），集中垂直线内链权重；
 - **导流监控（自动化时间序列）**：`python scripts/14_referral_monitor.py` 对线上站点
   实测供给侧指标——线上 ai-infra 简报数、赞助触点数（上下文卡/枢纽页/页脚）、合规
-  三要素逐页核验、铭信落地页可达性——快照追加至 `data/referral_monitor.jsonl`（逐条
-  可审计），最新一次在 `data/referral_monitor_latest.json`；GitHub Actions 每天两次
+  三要素逐页核验、铭信落地页可达性——  快照追加至 `data/referral_monitor.jsonl`（逐条
+  可审计），最新一次在 `data/referral_monitor_latest.json`；GitHub Actions 每 6 小时
   自动运行并入库（`.github/workflows/referral-monitor.yml`），合规缺失时工作流告警。
   首次实测（2026-07-22）：线上 117 篇简报、31 篇 ai-infra 且赞助卡全部合规、
   页脚披露位合规、铭信落地页（含 UTM）HTTP 200。

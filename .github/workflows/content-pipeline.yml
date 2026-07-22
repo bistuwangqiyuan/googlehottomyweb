@@ -2,9 +2,11 @@ name: content-pipeline
 
 on:
   schedule:
-    # 每 2 小时运行一次（UTC）——热词生命周期短，密集采样抓住全部 ai-infra 机会窗口；
-    # 大众类内容量由 --max-publish 配额约束（ai-infra 不占配额），不随频率线性膨胀
-    - cron: "17 */2 * * *"
+    # 每小时运行一次（UTC，24/7 最高密度）——热词生命周期短（榜单数小时轮换），
+    # 逐小时采样把 ai-infra 机会窗口的漏检降到最低；大众类内容量由 --max-publish
+    # 配额约束（ai-infra 不占配额），不随频率线性膨胀。部署预算核对：每轮至多
+    # 1 次内容推送 → ≤24 部署/天 + 监控 4 次/天，远低于 Vercel Hobby 100 次/天上限
+    - cron: "17 * * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -48,8 +50,9 @@ jobs:
           REVIEW_FALLBACK_BASE_URL: ${{ secrets.REVIEW_FALLBACK_BASE_URL }}
           REVIEW_FALLBACK_MODEL: ${{ secrets.REVIEW_FALLBACK_MODEL }}
         # --max-publish 仅约束非 ai-infra 类（大众/消费科技）；ai-infra 全量放行。
-        # 加密采样频率（6h→2h）的同时把大众类配额 5→3，总量受 7 天去重窗自然约束
-        run: python -m pipeline.run_pipeline --max-publish 3
+        # 加频原则"加频必收紧大众配额"：2h→1h 同时配额 3→2，大众类总量受
+        # "每轮 2 篇 + 7 天去重窗"双重约束，规避规模化内容滥用风险
+        run: python -m pipeline.run_pipeline --max-publish 2
 
       - name: Commit and push new content
         id: commit
