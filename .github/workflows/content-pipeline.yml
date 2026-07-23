@@ -109,18 +109,40 @@ jobs:
             exit 0
           fi
           echo "git-integration deploy stuck; creating deployment via Vercel API"
-          team_id=$(curl -s -H "Authorization: Bearer $VERCEL_TOKEN" \
-            "https://api.vercel.com/v2/teams" | python3 -c \
-            "import json,sys; print(json.load(sys.stdin)['teams'][0]['id'])")
-          repo_id=$(curl -s -H "Authorization: Bearer $VERCEL_TOKEN" \
-            "https://api.vercel.com/v9/projects/trendflow-site?teamId=$team_id" \
-            | python3 -c "import json,sys; print(json.load(sys.stdin)['link']['repoId'])")
-          dep=$(curl -s -X POST -H "Authorization: Bearer $VERCEL_TOKEN" \
-            -H "Content-Type: application/json" \
-            "https://api.vercel.com/v13/deployments?teamId=$team_id&forceNew=1" \
-            -d "{\"name\":\"trendflow-site\",\"target\":\"production\",
-                 \"gitSource\":{\"type\":\"github\",\"repoId\":$repo_id,\"ref\":\"master\"}}")
-          echo "$dep" | python3 -c \
-            "import json,sys; d=json.load(sys.stdin); print('api deployment:', d.get('id'), d.get('readyState', d.get('error')))"
+          # 健壮性要求（2026-07-23 实测教训）：/v2/teams 无 'teams' 字段时旧脚本
+          # KeyError 崩溃，把"发布成功"的运行整体标红。降级路径的任何失败都必须
+          # 如实打印并以 warning 收场——内容会随下一轮部署自愈，工作流红/绿信号
+          # 只留给真正的流水线故障；线上合规与可达性由 referral-monitor 独立把关。
+          python3 - <<'EOF' || echo "::warning::API fallback failed; content self-heals on next run's deploy"
+          import json, os, sys
+          import requests
+
+          tok = os.environ["VERCEL_TOKEN"]
+          H = {"Authorization": f"Bearer {tok}"}
+          api = "https://api.vercel.com"
+
+          r = requests.get(f"{api}/v2/teams", headers=H, timeout=30)
+          teams = (r.json().get("teams") or []) if r.ok else []
+          scopes = [t["id"] for t in teams] + [None]  # 团队作用域优先，个人作用域兜底
+          for team_id in scopes:
+              q = f"?teamId={team_id}" if team_id else ""
+              r = requests.get(f"{api}/v9/projects/trendflow-site{q}", headers=H, timeout=30)
+              if not r.ok:
+                  print(f"scope {team_id or 'personal'}: project lookup HTTP {r.status_code}: {r.text[:200]}")
+                  continue
+              repo_id = r.json()["link"]["repoId"]
+              q = f"?teamId={team_id}&forceNew=1" if team_id else "?forceNew=1"
+              r = requests.post(
+                  f"{api}/v13/deployments{q}", headers=H, timeout=60,
+                  json={"name": "trendflow-site", "target": "production",
+                        "gitSource": {"type": "github", "repoId": repo_id, "ref": "master"}})
+              d = r.json()
+              print(f"api deployment (scope {team_id or 'personal'}): HTTP {r.status_code}",
+                    d.get("id"), d.get("readyState") or json.dumps(d.get("error"))[:300])
+              if r.ok:
+                  sys.exit(0)
+          sys.exit(1)
+          EOF
           if check 10; then echo "fallback deploy verified"; exit 0; fi
-          echo "::warning::content still not live after API deploy; will self-heal on next run"
+          echo "::warning::content still not live yet; will self-heal on next run"
+          exit 0
