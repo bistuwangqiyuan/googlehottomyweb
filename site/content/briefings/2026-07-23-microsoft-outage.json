@@ -1,0 +1,98 @@
+{
+  "slug": "2026-07-23-microsoft-outage",
+  "title": "Microsoft Services Experience Widespread Outage",
+  "description": "Microsoft is facing an outage affecting multiple services including Outlook, Teams, and Xbox, as reported by various news outlets.",
+  "keyword": "microsoft outage",
+  "geo": "US",
+  "trafficLowerBound": 2000,
+  "category": "ai-infra",
+  "mode": "llm",
+  "publishedAt": "2026-07-23T16:56:58+00:00",
+  "updatedAt": "2026-07-23T16:56:58+00:00",
+  "sources": [
+    {
+      "title": "Is Outlook down? Microsoft outage hits email, Teams, Xbox",
+      "url": "https://www.seattletimes.com/business/microsoft/is-outlook-down-microsoft-outage-hits-email-teams-xbox/",
+      "source": "The Seattle Times"
+    },
+    {
+      "title": "Can't log in? Microsoft outage hits Teams, Outlook and more",
+      "url": "https://www.fox13seattle.com/news/microsoft-outage-hits-teams-outlook",
+      "source": "FOX 13 Seattle"
+    },
+    {
+      "title": "Is Microsoft down? Users blocked from Teams, Outlook, OpenAI, XBox Live",
+      "url": "https://www.news-journalonline.com/story/news/2026/07/23/microsoft-outages/91022249007/",
+      "source": "Daytona Beach News-Journal"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Microsoft Outage Details",
+      "paragraphs": [
+        "Multiple Microsoft services are currently experiencing an outage, impacting users across the United States.",
+        "According to The Seattle Times, the outage has affected email services, Teams, and Xbox."
+      ],
+      "list": []
+    },
+    {
+      "heading": "Impacted Services",
+      "paragraphs": [
+        "FOX 13 Seattle reports that users are unable to log in to Teams and Outlook due to the outage."
+      ],
+      "list": [
+        "Outlook",
+        "Teams",
+        "Xbox"
+      ]
+    },
+    {
+      "heading": "User Experience",
+      "paragraphs": [
+        "The Daytona Beach News-Journal notes that users are blocked from accessing Teams, Outlook, OpenAI, and XBox Live."
+      ],
+      "list": []
+    }
+  ],
+  "faq": [
+    {
+      "q": "What Microsoft services are affected by the outage?",
+      "a": "Services affected include Outlook, Teams, and Xbox, as reported by The Seattle Times."
+    },
+    {
+      "q": "Is the outage limited to specific regions?",
+      "a": "The outage is impacting users across the United States."
+    }
+  ],
+  "facts": {
+    "keyword": "microsoft outage",
+    "region": "US",
+    "google_reported_search_lower_bound": 2000,
+    "trend_feed_published_at": "Thu, 23 Jul 2026 08:30:00 -0700",
+    "snapshot_taken_at_utc": "2026-07-23T16:55:35+00:00",
+    "news_coverage": [
+      {
+        "title": "Is Outlook down? Microsoft outage hits email, Teams, Xbox",
+        "source": "The Seattle Times",
+        "url": "https://www.seattletimes.com/business/microsoft/is-outlook-down-microsoft-outage-hits-email-teams-xbox/"
+      },
+      {
+        "title": "Can't log in? Microsoft outage hits Teams, Outlook and more",
+        "source": "FOX 13 Seattle",
+        "url": "https://www.fox13seattle.com/news/microsoft-outage-hits-teams-outlook"
+      },
+      {
+        "title": "Is Microsoft down? Users blocked from Teams, Outlook, OpenAI, XBox Live",
+        "source": "Daytona Beach News-Journal",
+        "url": "https://www.news-journalonline.com/story/news/2026/07/23/microsoft-outages/91022249007/"
+      }
+    ]
+  },
+  "review": {
+    "approved": true,
+    "score": 0.99,
+    "mode": "llm",
+    "notes": "rules: all rules checks passed | reviewer(qwen-max): The article is well-structured and accurately reports the outage, attributing information to the correct sources. The only minor issue is that OpenAI is mentioned in the 'User Experience' section but not listed as an affected service in the 'Impacted Services' list, which could be slightly misleading.",
+    "reviewedAt": "2026-07-23T16:57:03+00:00"
+  }
+}
