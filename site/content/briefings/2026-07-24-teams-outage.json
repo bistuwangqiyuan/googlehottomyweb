@@ -1,0 +1,97 @@
+{
+  "slug": "2026-07-24-teams-outage",
+  "title": "Microsoft Teams Experiences Outage in Asia-Pacific Region",
+  "description": "Microsoft Teams faced an outage affecting users in the Asia-Pacific region, with the issue now mitigated according to Microsoft.",
+  "keyword": "teams outage",
+  "geo": "AU",
+  "trafficLowerBound": 20000,
+  "category": "ai-infra",
+  "mode": "llm",
+  "publishedAt": "2026-07-24T03:44:53+00:00",
+  "updatedAt": "2026-07-24T03:44:53+00:00",
+  "sources": [
+    {
+      "title": "Microsoft says Teams outage across Asia-Pacific now 'mitigated'",
+      "url": "https://www.abc.net.au/news/2026-07-24/microsoft-investigating-teams-outage/106954230",
+      "source": "ABC News & Headlines – Australian Broadcasting Corporation"
+    },
+    {
+      "title": "Microsoft 365 outage affects Teams, SharePoint and other services",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-outage-affects-teams-sharepoint-and-other-services/",
+      "source": "BleepingComputer"
+    },
+    {
+      "title": "Microsoft Azure outage at West US region causes intermittent connectivity failures",
+      "url": "https://www.datacenterdynamics.com/en/news/microsoft-azure-outage-at-west-us-region-causes-intermittent-connectivity-failures/",
+      "source": "Data Center Dynamics"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Outage Details",
+      "paragraphs": [
+        "Microsoft Teams experienced an outage affecting users in the Asia-Pacific region, as reported by ABC News & Headlines – Australian Broadcasting Corporation. The issue has been mitigated, ensuring service continuity for users."
+      ],
+      "list": []
+    },
+    {
+      "heading": "Services Affected",
+      "paragraphs": [
+        "According to BleepingComputer, the Microsoft 365 outage impacted not only Teams but also SharePoint and other services, causing disruptions for users relying on these platforms."
+      ],
+      "list": []
+    },
+    {
+      "heading": "Azure Outage",
+      "paragraphs": [
+        "Data Center Dynamics reported that a Microsoft Azure outage in the West US region led to intermittent connectivity failures, potentially contributing to the broader service disruption."
+      ],
+      "list": []
+    }
+  ],
+  "faq": [
+    {
+      "q": "What was the impact of the Teams outage?",
+      "a": "The Teams outage affected users in the Asia-Pacific region, disrupting services and causing connectivity issues."
+    },
+    {
+      "q": "Which other services were affected by the Microsoft 365 outage?",
+      "a": "In addition to Teams, SharePoint and other services were impacted by the Microsoft 365 outage, as reported by BleepingComputer."
+    },
+    {
+      "q": "How has Microsoft addressed the issue?",
+      "a": "Microsoft has mitigated the Teams outage, ensuring that services are restored for users in the affected region."
+    }
+  ],
+  "facts": {
+    "keyword": "teams outage",
+    "region": "AU",
+    "google_reported_search_lower_bound": 20000,
+    "trend_feed_published_at": "Thu, 23 Jul 2026 17:30:00 -0700",
+    "snapshot_taken_at_utc": "2026-07-24T03:43:32+00:00",
+    "news_coverage": [
+      {
+        "title": "Microsoft says Teams outage across Asia-Pacific now 'mitigated'",
+        "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+        "url": "https://www.abc.net.au/news/2026-07-24/microsoft-investigating-teams-outage/106954230"
+      },
+      {
+        "title": "Microsoft 365 outage affects Teams, SharePoint and other services",
+        "source": "BleepingComputer",
+        "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-outage-affects-teams-sharepoint-and-other-services/"
+      },
+      {
+        "title": "Microsoft Azure outage at West US region causes intermittent connectivity failures",
+        "source": "Data Center Dynamics",
+        "url": "https://www.datacenterdynamics.com/en/news/microsoft-azure-outage-at-west-us-region-causes-intermittent-connectivity-failures/"
+      }
+    ]
+  },
+  "review": {
+    "approved": true,
+    "score": 1.0,
+    "mode": "llm",
+    "notes": "rules: all rules checks passed | reviewer(qwen-max): The article draft is well-structured and adheres to the provided facts. All claims are properly attributed to their sources, and the tone is neutral without any exaggeration or sensationalism. The content is also respectful and appropriate for a general audience.",
+    "reviewedAt": "2026-07-24T03:44:57+00:00"
+  }
+}
