@@ -1,2809 +1,5 @@
 [
   {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "urška žigart",
-    "geo": "BE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "gevecht",
-    "geo": "BE",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "robin williams",
-    "geo": "BE",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "stig tøfting",
-    "geo": "DK",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "weather",
-    "geo": "DK",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "погода",
-    "geo": "DK",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "thomas arnoldsen",
-    "geo": "DK",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "gerard butler",
-    "geo": "DK",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "jannik sinner",
-    "geo": "DK",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "daniel kinahan",
-    "geo": "NO",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "serbias president",
-    "geo": "NO",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "rb",
-    "geo": "NO",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "maya jama",
-    "geo": "NO",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "rbnett",
-    "geo": "NO",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "sverige",
-    "geo": "NO",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "boligmarked",
-    "geo": "NO",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "arendalsuka",
-    "geo": "NO",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "sää tampere",
-    "geo": "FI",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "погода",
-    "geo": "FI",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "weather",
-    "geo": "FI",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "daniel kinahan",
-    "geo": "FI",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "chelsea fc",
-    "geo": "FI",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "perseidit",
-    "geo": "FI",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "fargo",
-    "geo": "FI",
-    "decision": "rejected",
-    "reason": "blacklist C3-tragedy: matched 'dies'"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "william orbit",
-    "geo": "FI",
-    "decision": "rejected",
-    "reason": "blacklist C3-tragedy: matched 'dies'"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "novinky",
-    "geo": "CZ",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "sk dynamo české budějovice",
-    "geo": "CZ",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "google pixel",
-    "geo": "CZ",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "foc",
-    "geo": "RO",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "carte de identitate",
-    "geo": "RO",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "cfr calatori",
-    "geo": "RO",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "ministerul finanțelor",
-    "geo": "RO",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "mercedes-amg",
-    "geo": "RO",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "abdulkadir uraloğlu",
-    "geo": "TR",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "borç",
-    "geo": "TR",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "nefes",
-    "geo": "TR",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "adıyaman hava durumu",
-    "geo": "TR",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "yol",
-    "geo": "TR",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "آبوهوا",
-    "geo": "TR",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "posiciones de américa de cali contra atlético nacional",
-    "geo": "CL",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "san diego fc",
-    "geo": "CL",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "américa - timbers",
-    "geo": "CL",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "la casa del dragon",
-    "geo": "CL",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "house of the dragon",
-    "geo": "CL",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "chicago fire fc",
-    "geo": "CL",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "alexandra eala",
-    "geo": "CL",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "presupuesto",
-    "geo": "CO",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "fpc",
-    "geo": "CO",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "liga águila",
-    "geo": "CO",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "el iphone 18 pro max",
-    "geo": "CO",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "house of the dragon",
-    "geo": "CO",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "david ospina",
-    "geo": "CO",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "posiciones de club de fútbol cruz azul contra new york city football club",
-    "geo": "CO",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "acaramelados serie coreana",
-    "geo": "CO",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "alexandra eala",
-    "geo": "CO",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "catherin palomino",
-    "geo": "PE",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "posiciones de guayaquil city contra emelec",
-    "geo": "PE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "house of the dragon",
-    "geo": "PE",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "la casa del dragon",
-    "geo": "PE",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "san diego fc",
-    "geo": "PE",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "san diego fc - tijuana",
-    "geo": "PE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "posiciones de club de fútbol cruz azul contra new york city football club",
-    "geo": "PE",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "austin fc - puebla",
-    "geo": "PE",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "nguyễn quang hải",
-    "geo": "VN",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "cây",
-    "geo": "VN",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "américa đấu với portland timbers",
-    "geo": "VN",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "nashville đấu với san luis",
-    "geo": "VN",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "bệnh viện",
-    "geo": "VN",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "cruz azul đấu với new york city",
-    "geo": "VN",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "korhatár",
-    "geo": "HU",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "hatoslottó nyerőszámai",
-    "geo": "HU",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "időjárás előrejelzés",
-    "geo": "HU",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "azahriah",
-    "geo": "HU",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "gta 6",
-    "geo": "HU",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "whitney houston",
-    "geo": "HU",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "bruce willis",
-    "geo": "HU",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "juegos",
-    "geo": "ES",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 3 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "posiciones de américa de cali contra atlético nacional",
-    "geo": "MX",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 4 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "time",
-    "geo": "IE",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 5 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "supermarket",
-    "geo": "NZ",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 6 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "posiciones de chicago fire fc contra santos laguna",
-    "geo": "PE",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 7 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "américa - timbers",
-    "geo": "PE",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 8 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "house of the dragon season 4",
-    "geo": "CA",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 9 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "pozzuoli",
-    "geo": "IT",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 10 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "club américa vs portland timbers",
-    "geo": "ID",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 11 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "chicago fire fc vs santos laguna standings",
-    "geo": "ZA",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 12 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "chicago vs santos laguna",
-    "geo": "ZA",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 13 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "malawi vs ghana",
-    "geo": "NG",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 14 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "hpcl share price",
-    "geo": "IN",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 15 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "tata motors share",
-    "geo": "IN",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 16 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "sam mcintyre",
-    "geo": "NZ",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 17 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "america vs",
-    "geo": "CL",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 18 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "chicago fire đấu với santos laguna",
-    "geo": "VN",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 19 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "canicule prévisions",
-    "geo": "FR",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 20 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "loterias mega sena",
-    "geo": "BR",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 21 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "weather",
-    "geo": "ZA",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 22 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "alexandra eala",
-    "geo": "PH",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 23 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "solar eclipses glasses",
-    "geo": "GB",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 24 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "hunter biden",
-    "geo": "FR",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 25 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "tatort borowski ewige meer",
-    "geo": "DE",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 26 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "naomi osaka",
-    "geo": "PH",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 27 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "frio",
-    "geo": "PT",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 28 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "anses",
-    "geo": "AR",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 29 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "pirates babina noko mtn8",
-    "geo": "ZA",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 30 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "lotto result aug 09 2026",
-    "geo": "PH",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 31 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "flamengo - ec vitória",
-    "geo": "PT",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 32 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "emil boc",
-    "geo": "RO",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 33 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "btmc",
-    "geo": "VN",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 34 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "reno fire",
-    "geo": "US",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 35 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "house of the dragon",
-    "geo": "GB",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 36 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "iran trump",
-    "geo": "CA",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 37 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "cinegrafista",
-    "geo": "BR",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 38 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "america do mexico",
-    "geo": "BR",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 39 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "casa do dragao",
-    "geo": "BR",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 40 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "noticias",
-    "geo": "ES",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 41 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "botic van de zandschulp",
-    "geo": "NL",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 42 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "twoja pogoda",
-    "geo": "PL",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 43 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "penyebab kebakaran nipah mall makassar",
-    "geo": "ID",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 44 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "bürgen bread new zealand exit",
-    "geo": "NZ",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 45 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "leylah fernandez",
-    "geo": "PH",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 46 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "classificações de bragantino x corinthians",
-    "geo": "PT",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 47 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "wetter bern",
-    "geo": "CH",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 48 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "vejret",
-    "geo": "DK",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 49 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "lufthavn",
-    "geo": "DK",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 50 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "tuusula",
-    "geo": "FI",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 51 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "evropa",
-    "geo": "CZ",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 52 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "nehoda",
-    "geo": "CZ",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 53 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "artis – olomouc",
-    "geo": "CZ",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 54 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "toronto maple leafs",
-    "geo": "CA",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 55 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "anne hathaway",
-    "geo": "CA",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 56 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "dürre",
-    "geo": "DE",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 57 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "retraite",
-    "geo": "FR",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 58 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "playa",
-    "geo": "ES",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 59 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "hulpdiensten",
-    "geo": "NL",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 60 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "pogoda poznań",
-    "geo": "PL",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 61 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "karol nawrocki",
-    "geo": "PL",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 62 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "progresar",
-    "geo": "AR",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 63 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "precio",
-    "geo": "AR",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 64 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "school",
-    "geo": "ZA",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 65 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "beauden barrett stormers match",
-    "geo": "NZ",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 66 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "items",
-    "geo": "MY",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 67 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "rfa lyme bay mombasa port",
-    "geo": "KE",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 68 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "partido socialista",
-    "geo": "PT",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 69 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "eclipsbril",
-    "geo": "BE",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 70 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "blessé",
-    "geo": "BE",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 71 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "solformørkelse",
-    "geo": "DK",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 72 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "nicușor dan",
-    "geo": "RO",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 73 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "galatasaray transfer",
-    "geo": "TR",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 74 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "tabla de posiciones liga betplay",
-    "geo": "CO",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 75 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "bảo tín mạnh hải",
-    "geo": "VN",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 76 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "forsthoffer ágnes",
-    "geo": "HU",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 77 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "amber alert",
-    "geo": "US",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 78 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "weather phoenix",
-    "geo": "US",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 79 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "flash flooding adelaide",
-    "geo": "AU",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 80 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "the times of india",
-    "geo": "IN",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 81 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "stefan kretzschmar",
-    "geo": "DE",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 82 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "artemis 2",
-    "geo": "BR",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 83 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "pauline ferrand-prévot",
-    "geo": "FR",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 84 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "vuelos",
-    "geo": "ES",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 85 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "café",
-    "geo": "ES",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 86 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "cine",
-    "geo": "ES",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 87 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "pogoda bydgoszcz",
-    "geo": "PL",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 88 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "indeks desa 2026",
-    "geo": "ID",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 89 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "san diego fc",
-    "geo": "ID",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 90 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "heatwave weather forecast",
-    "geo": "IE",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 91 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "budget",
-    "geo": "IE",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 92 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "tomb",
-    "geo": "IE",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 93 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "cincinnati open",
-    "geo": "PH",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 94 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "bsp consumer complaints 2025",
-    "geo": "PH",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 95 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "boxing news",
-    "geo": "PH",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 96 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "perlumbaan drag",
-    "geo": "MY",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 97 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "sukma selangor 2026",
-    "geo": "MY",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 98 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "arsenal bruno guimaraes transfer",
-    "geo": "NG",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 99 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "bola oyebamiji",
-    "geo": "NG",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 100 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "ajax",
-    "geo": "KE",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 101 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "descida dos combustíveis",
-    "geo": "PT",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 102 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "lago",
-    "geo": "CH",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 103 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "felix gall",
-    "geo": "AT",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 104 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "nordjyske",
-    "geo": "DK",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 105 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "dt",
-    "geo": "NO",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 106 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "vold",
-    "geo": "NO",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 107 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "ella mikkola",
-    "geo": "FI",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 108 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "novak djokovič",
-    "geo": "CZ",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 109 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "lehká atletika",
-    "geo": "CZ",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 110 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "zatmeni slunce",
-    "geo": "CZ",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 111 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "rozsáhlý požár",
-    "geo": "CZ",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 112 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "meteo bucuresti",
-    "geo": "RO",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 113 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "victor crivoi",
-    "geo": "RO",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 114 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "1 nakil sonuçları",
-    "geo": "TR",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 115 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "izzet özgenç",
-    "geo": "TR",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 116 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "millenium show",
-    "geo": "CL",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 117 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "comando de defensa aeroespacial de américa del norte",
-    "geo": "CL",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 118 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "trịnh khắc cường",
-    "geo": "VN",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 119 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "krízis",
-    "geo": "HU",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 120 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:07+00:00",
-    "keyword": "ii. margit dán királynő",
-    "geo": "HU",
-    "decision": "rejected",
-    "reason": "skipped-capacity: non-infra rank 121 > max 2"
-  },
-  {
-    "runAt": "2026-08-10T04:55:40+00:00",
-    "keyword": "américa - atlético nacional",
-    "geo": "ES",
-    "decision": "published",
-    "reason": "score 1.0 (llm)",
-    "slug": "2026-08-10-america-atletico-nacional"
-  },
-  {
-    "runAt": "2026-08-10T04:56:14+00:00",
-    "keyword": "horoscop",
-    "geo": "RO",
-    "decision": "published",
-    "reason": "score 1.0 (llm)",
-    "slug": "2026-08-10-horoscop"
-  },
-  {
-    "runAt": "2026-08-10T04:57:16+00:00",
-    "keyword": "iphone 17 zam",
-    "geo": "TR",
-    "decision": "published",
-    "reason": "score 0.99 (llm)",
-    "slug": "2026-08-10-iphone-17-zam"
-  },
-  {
-    "runAt": "2026-08-10T04:57:53+00:00",
-    "keyword": "apple iphone 18 pro",
-    "geo": "CA",
-    "decision": "published",
-    "reason": "score 1.0 (llm)",
-    "slug": "2026-08-10-apple-iphone-18-pro"
-  },
-  {
-    "runAt": "2026-08-10T04:58:44+00:00",
-    "keyword": "marseille vs athletic",
-    "geo": "KE",
-    "decision": "rejected",
-    "reason": "review gate: ungrounded number in text: 45,000; ungrounded number in text: 45,000"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "sterling point season 2",
-    "geo": "US",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "suisun city",
-    "geo": "US",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "liberty island charter boat capsize",
-    "geo": "US",
-    "decision": "rejected",
-    "reason": "blacklist C3-tragedy: matched 'killed'"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "jake whisenant",
-    "geo": "US",
-    "decision": "rejected",
-    "reason": "blacklist C3-tragedy: matched 'dies'"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "steve harvey",
-    "geo": "US",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "peoria il weather",
-    "geo": "US",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "ben jones",
-    "geo": "GB",
-    "decision": "rejected",
-    "reason": "blacklist C3-tragedy: matched 'dies'"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "abbie lainton",
-    "geo": "GB",
-    "decision": "rejected",
-    "reason": "blacklist C3-tragedy: matched 'dies'"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "north korea",
-    "geo": "GB",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "chicago fire fc vs santos laguna standings",
-    "geo": "GB",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "pc harper petition",
-    "geo": "GB",
-    "decision": "rejected",
-    "reason": "blacklist C3-tragedy: matched 'killed'"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "jason arday book event cancellations",
-    "geo": "GB",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "joaquin seys",
-    "geo": "GB",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "football transfer news arsenal",
-    "geo": "GB",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "jose mourinho",
-    "geo": "GB",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "in",
-    "geo": "CA",
-    "decision": "rejected",
-    "reason": "blacklist C3-tragedy: matched 'dies'"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "wcbl",
-    "geo": "CA",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "muskoka",
-    "geo": "CA",
-    "decision": "rejected",
-    "reason": "blacklist C3-tragedy: matched 'killed'"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "sterling point season 2",
-    "geo": "CA",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "posiciones de club de fútbol cruz azul contra new york city football club",
-    "geo": "CA",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "apple iphone 18 pro",
-    "geo": "CA",
-    "decision": "rejected",
-    "reason": "dedup: same keyword published within 7 days"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "américa vs portland",
-    "geo": "CA",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "airbus a380",
-    "geo": "AU",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "2029 chevrolet camaro sedan",
-    "geo": "AU",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "sunrise",
-    "geo": "AU",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "chaz mostert",
-    "geo": "AU",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "ray hadley",
-    "geo": "AU",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "hospital",
-    "geo": "AU",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "power outage near me",
-    "geo": "AU",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "lindsay clancy trial",
-    "geo": "AU",
-    "decision": "rejected",
-    "reason": "blacklist C3-tragedy: matched 'killed'"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "தமிழக வெற்றிக் கழகம்",
-    "geo": "IN",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "संसद",
-    "geo": "IN",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "వార్త",
-    "geo": "IN",
-    "decision": "rejected",
-    "reason": "dedup: same keyword published within 7 days"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "मुख्यमंत्री लाड़ली बहना योजना",
-    "geo": "IN",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "content rewards",
-    "geo": "IN",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "manoramaonline",
-    "geo": "IN",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "paris saint-germain",
-    "geo": "DE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "vfl halle 1896",
-    "geo": "DE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "stuttgarter zeitung",
-    "geo": "DE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "bad godesberg",
-    "geo": "DE",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "trinkwasser",
-    "geo": "DE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "pegel kaub",
-    "geo": "DE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "bank of japan",
-    "geo": "DE",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "tobey maguire",
-    "geo": "BR",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "maju coutinho",
-    "geo": "BR",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "genocida",
-    "geo": "BR",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "sarampo vacinação",
-    "geo": "BR",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "tocantins",
-    "geo": "BR",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "田中 卓志",
-    "geo": "JP",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "ジャック・ル・マロワ賞",
-    "geo": "JP",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "東尾 理子",
-    "geo": "JP",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "ショート スリーパー 堀 大輔",
-    "geo": "JP",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "iphone 値上げ",
-    "geo": "JP",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "花火大会 琵琶湖",
-    "geo": "JP",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "中道改革連合",
-    "geo": "JP",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "浅田真央",
-    "geo": "JP",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "甲子園 コールド",
-    "geo": "JP",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "川瀬晃",
-    "geo": "JP",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "architecte des bâtiments de france",
-    "geo": "FR",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "championnat d'europe de natation 2026",
-    "geo": "FR",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "10 aout",
-    "geo": "FR",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "tallulah belle willis",
-    "geo": "FR",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "eclipse maps",
-    "geo": "FR",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "jannik sinner",
-    "geo": "FR",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "régis montagne",
-    "geo": "FR",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "francesco bagnaia",
-    "geo": "FR",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "milano finanza",
-    "geo": "IT",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "incendio mornese",
-    "geo": "IT",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "reggionline",
-    "geo": "IT",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "board of peace",
-    "geo": "IT",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "la sicilia",
-    "geo": "IT",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "la provincia pavese",
-    "geo": "IT",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "samira lui",
-    "geo": "IT",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "golf",
-    "geo": "ES",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "ester muñoz",
-    "geo": "ES",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "eltiempo",
-    "geo": "ES",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "mort",
-    "geo": "ES",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "colesterol",
-    "geo": "ES",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "tiempo pamplona",
-    "geo": "ES",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "gran vía",
-    "geo": "ES",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "playstation store",
-    "geo": "ES",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "klimaat",
-    "geo": "NL",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "kortonjolaan eindhoven",
-    "geo": "NL",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "rob zweekhorst",
-    "geo": "NL",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "kenneth pérez",
-    "geo": "NL",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "roony bardghji",
-    "geo": "NL",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "anne hathaway",
-    "geo": "NL",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "ek atletiek 2026",
-    "geo": "NL",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "syrie",
-    "geo": "NL",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "espn",
-    "geo": "NL",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "sverigedemokraterna",
-    "geo": "SE",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "kollision",
-    "geo": "SE",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "nooshi dadgostar",
-    "geo": "SE",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "spökraketerna",
-    "geo": "SE",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "weather",
-    "geo": "SE",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "pogoda",
-    "geo": "SE",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "blocket.se",
-    "geo": "SE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "jarosław abramow-newerly",
-    "geo": "PL",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "polskie stronnictwo ludowe",
-    "geo": "PL",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "zenon martyniuk",
-    "geo": "PL",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "jack holder",
-    "geo": "PL",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "giełda papierów wartościowych w warszawie",
-    "geo": "PL",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "pogoda piła",
-    "geo": "PL",
-    "decision": "rejected",
-    "reason": "C5-sources: no named news source in feed"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "pogoda legnica",
-    "geo": "PL",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "gaceta",
-    "geo": "MX",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "rayban meta",
-    "geo": "MX",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "herencia",
-    "geo": "MX",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "masterchef",
-    "geo": "MX",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "austin football club",
-    "geo": "MX",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "leagues cup standings",
-    "geo": "MX",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "mi anses cuando cobro",
-    "geo": "AR",
-    "decision": "rejected",
-    "reason": "C5-sources: no named news source in feed"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "la casa del dragon",
-    "geo": "AR",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "bacteria",
-    "geo": "AR",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "san diego fc",
-    "geo": "AR",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "house of the dragon",
-    "geo": "AR",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "belinda bencic",
-    "geo": "AR",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "megawati soekarnoputri",
-    "geo": "ID",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "sultan brunei",
-    "geo": "ID",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "brigadir jenderal polisi",
-    "geo": "ID",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "bumi saham",
-    "geo": "ID",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "san diego vs tijuana",
-    "geo": "ID",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "anwar ibrahim",
-    "geo": "SG",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "extreme weather",
-    "geo": "SG",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "hong kong weather",
-    "geo": "SG",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "alexandra eala",
-    "geo": "SG",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "naomi osaka",
-    "geo": "SG",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "cancer",
-    "geo": "SG",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "colorectal cancer",
-    "geo": "SG",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "mark zuckerberg",
-    "geo": "SG",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "weer",
-    "geo": "ZA",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "clima",
-    "geo": "ZA",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "josé mourinho",
-    "geo": "ZA",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "meteorologia",
-    "geo": "ZA",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "jannik sinner",
-    "geo": "ZA",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "time",
-    "geo": "IE",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "jobs",
-    "geo": "IE",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "tommy detamore",
-    "geo": "IE",
-    "decision": "rejected",
-    "reason": "blacklist C3-tragedy: matched 'died'"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "sorcha mccartan",
-    "geo": "IE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "andoni iraola",
-    "geo": "IE",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "colin farrell",
-    "geo": "IE",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "airport",
-    "geo": "IE",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "storm",
-    "geo": "NZ",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "health",
-    "geo": "NZ",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "airbus a380",
-    "geo": "NZ",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "cancer",
-    "geo": "NZ",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "boat",
-    "geo": "NZ",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "kiwibank mortgage rate increases",
-    "geo": "NZ",
-    "decision": "rejected",
-    "reason": "blacklist C1-YMYL-finance: matched 'mortgage rate'"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "alexandra eala",
-    "geo": "NZ",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "tallulah willis",
-    "geo": "NZ",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "doe oil price rollback",
-    "geo": "PH",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "jeongyeon",
-    "geo": "PH",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "vhong navarro",
-    "geo": "PH",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "vice ganda",
-    "geo": "PH",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "vince dizon",
-    "geo": "PH",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "anne curtis",
-    "geo": "PH",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "cincinnati open 2026",
-    "geo": "PH",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "solar eclipses",
-    "geo": "MY",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "ferrari aruz viral road dispute",
-    "geo": "MY",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "chicago vs santos laguna",
-    "geo": "MY",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "bharian",
-    "geo": "MY",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "petrol",
-    "geo": "MY",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "naomi osaka",
-    "geo": "MY",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "chicago fire fc vs santos laguna standings",
-    "geo": "NG",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "barcelona news",
-    "geo": "NG",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "goal",
-    "geo": "NG",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "house of the dragon season 3",
-    "geo": "NG",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "ghana vs malawi",
-    "geo": "NG",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "al-nassr samu costa transfer",
-    "geo": "NG",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "coco gauff",
-    "geo": "NG",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "who was evicted from bbn today",
-    "geo": "NG",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "benfica",
-    "geo": "KE",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "larry madowo",
-    "geo": "KE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "porto vs alverca",
-    "geo": "KE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "xiaomi redmi 17",
-    "geo": "KE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "crystal palace f.c.",
-    "geo": "KE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "jobe bellingham",
-    "geo": "KE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "pênalti",
-    "geo": "PT",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "capas de jornais",
-    "geo": "PT",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "brasileirão série a",
-    "geo": "PT",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "sismo",
-    "geo": "PT",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "emma",
-    "geo": "PT",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "joao fonseca",
-    "geo": "PT",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "classement benfica – academico de viseu",
-    "geo": "PT",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "tatort borowski",
-    "geo": "CH",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "lac d'oeschinen",
-    "geo": "CH",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "brienzersee rockfestival",
-    "geo": "CH",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "notsignal",
-    "geo": "CH",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "course-poursuite",
-    "geo": "CH",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "sonnenfinsternis 2026",
-    "geo": "CH",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "hundekot",
-    "geo": "CH",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "daniel kinahan",
-    "geo": "CH",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "amphoren",
-    "geo": "AT",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "minister",
-    "geo": "AT",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "südkorea",
-    "geo": "AT",
-    "decision": "rejected",
-    "reason": "low-volume: 100 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "kottingbrunn",
-    "geo": "AT",
-    "decision": "rejected",
-    "reason": "blacklist C3-tragedy: matched 'murder'"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "klettersteig",
-    "geo": "AT",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "oberösterreich",
-    "geo": "AT",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "goldpreis prognose",
-    "geo": "AT",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "mark zuckerberg",
-    "geo": "BE",
-    "decision": "rejected",
-    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
-  },
-  {
-    "runAt": "2026-08-10T06:42:46+00:00",
-    "keyword": "sécheresse",
-    "geo": "BE",
-    "decision": "rejected",
-    "reason": "low-volume: 200 < 500"
-  },
-  {
     "runAt": "2026-08-10T06:42:46+00:00",
     "keyword": "épidémie",
     "geo": "BE",
@@ -7010,5 +4206,2807 @@
     "decision": "published",
     "reason": "score 1.0 (rules)",
     "slug": "2026-08-10-posiciones-de-san-diego-fc-contra-club-tijuana"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "hamilton kroger evacuated sunday",
+    "geo": "US",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "detroit weather",
+    "geo": "US",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "jackie bald eagle anemia condition",
+    "geo": "US",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "weather detroit",
+    "geo": "US",
+    "decision": "rejected",
+    "reason": "blacklist C3-tragedy: matched 'killed'"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "deandre ayton",
+    "geo": "US",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "us extreme heat forecast",
+    "geo": "US",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "el salvador",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "tabby stoecker",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "franco ravizzoli",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "cat dowling musician",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "blacklist C3-tragedy: matched 'dies'"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "abu kamara",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "python",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ringgo parking scam",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "tiempo",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "windsor weather",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ligue nationale de hockey",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ire vs afg",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "h",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "lithium-ion battery fire warnings canada",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "stax activewear",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "tara mckeon proud poppy administration",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "sydney melbourne property price drops",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "home and away spoilers",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "jeongyeon",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "aubrey plaza",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "newcastle airport",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ire vs afg",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "dedup: same keyword published within 7 days"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ന്യൂനമര്ദ്ദം",
+    "geo": "IN",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "বঙ্গোপসাগর",
+    "geo": "IN",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "house of the dragon season 3 episode 8",
+    "geo": "IN",
+    "decision": "rejected",
+    "reason": "blacklist C3-tragedy: matched 'died'"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "రాజస్థాన్",
+    "geo": "IN",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "రాశి",
+    "geo": "IN",
+    "decision": "rejected",
+    "reason": "dedup: same keyword published within 7 days"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ಕಾರು",
+    "geo": "IN",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "bergrettung",
+    "geo": "DE",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "katharina truppe",
+    "geo": "DE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "tatjana pinto",
+    "geo": "DE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "otoni de paula",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "estados unidos",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "previsão do tempo guarulhos",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "石原伸晃",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "qさま",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "サーフィン",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "降灰予報",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "quizknock",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "東京 天気予報",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "西垣匠ブルーロック",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "にじさんじ",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "主審",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "広陵高校野球部",
+    "geo": "JP",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "soccer",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "a40",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ayyoub bouaddi",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "balladur",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "iphone 18",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "dedup: same keyword published within 7 days"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "forage",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "teun koopmeiners",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "simona quadarella",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "linate",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ireland vs afghanistan",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "urška žigart",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "agresión",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "adolescencia",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "frank galvez",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "sergio arribas",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "uma thurman",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "aeronave",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "matias fernandez pardo",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "afc",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "sharks",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ben shelton",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "joe biden",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "tesla, inc.",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "etna",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "spider-man: brand new day",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "juni",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "botlekbrug",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "suge knight",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "blacklist C3-tragedy: matched 'murder'"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ayyoub bouaddi",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "مخالفة",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "lilla karlsö",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "liv golf",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "svtplay",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "dala-demokraten",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "rasism",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "bohusläningen",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "speedwaynews.pl",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "katania",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "взрыв",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "santos laguna",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "robert makłowicz",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "karolina gilon",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "citlalli hernández",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "el informador",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "rayban meta",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "herencia",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "masterchef",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "datachaco",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "misionesonline",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "clima mendoza",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "pronostico cordoba",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "temperatura cordoba",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "clima cordoba",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "tiempo en mendoza",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "clima salta",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "pasar cisalak",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "giaa",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "partai politik",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "stadion gelora bandung lautan api",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "jeongyeon",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ireland vs afghanistan",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "yu mengyu twins birth",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "mtr",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "anwar ibrahim",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "blacklist C1-YMYL-medical: matched 'surgery'"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "extreme weather",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ireland vs afghanistan",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "gta",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "lawsuit",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "dedup: same keyword published within 7 days"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "matt mcquillan",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "blacklist C3-tragedy: matched 'dies'"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "paolo maldini",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "mark zuckerberg",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ire vs afg",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "judge",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "european athletics championships",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "mayor of limerick",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "shaun murphy",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "mark zuckerberg",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "time",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "car chase",
+    "geo": "NZ",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "kelly slater",
+    "geo": "NZ",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "councillor",
+    "geo": "NZ",
+    "decision": "rejected",
+    "reason": "blacklist C3-tragedy: matched 'dies'"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "lincoln memorial reflecting pool",
+    "geo": "NZ",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "health",
+    "geo": "NZ",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "tnt tropang 5g",
+    "geo": "PH",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "miro quimbo",
+    "geo": "PH",
+    "decision": "rejected",
+    "reason": "C5-sources: no named news source in feed"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ateneo de manila university",
+    "geo": "PH",
+    "decision": "rejected",
+    "reason": "blacklist C3-tragedy: matched 'shooting'"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "house of the dragon",
+    "geo": "PH",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "azmin ali",
+    "geo": "MY",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "hong kong observatory",
+    "geo": "MY",
+    "decision": "rejected",
+    "reason": "C5-sources: no named news source in feed"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "thailand",
+    "geo": "MY",
+    "decision": "rejected",
+    "reason": "blacklist C3-tragedy: matched 'killed'"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ireland vs afghanistan",
+    "geo": "MY",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "tuanku muhriz",
+    "geo": "MY",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ragut",
+    "geo": "MY",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "typhoon",
+    "geo": "MY",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "airbus a380",
+    "geo": "MY",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "chris waddle",
+    "geo": "NG",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "lagos-calabar coastal highway",
+    "geo": "NG",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "andrey santos",
+    "geo": "NG",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "korean drama",
+    "geo": "NG",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "house of the dragon season 3 episode 8",
+    "geo": "NG",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "algeria",
+    "geo": "NG",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "chicago fire fc vs santos laguna standings",
+    "geo": "NG",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "barcelona news",
+    "geo": "NG",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "bullet",
+    "geo": "KE",
+    "decision": "rejected",
+    "reason": "blacklist C3-tragedy: matched 'dies'"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "kcaa new flight routes",
+    "geo": "KE",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "benfica",
+    "geo": "KE",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "larry madowo",
+    "geo": "KE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "porto vs alverca",
+    "geo": "KE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "xiaomi redmi 17",
+    "geo": "KE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "crystal palace f.c.",
+    "geo": "KE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "jogador de futebol",
+    "geo": "PT",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ayyoub bouaddi",
+    "geo": "PT",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "rui silva",
+    "geo": "PT",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "dinheiro",
+    "geo": "PT",
+    "decision": "rejected",
+    "reason": "dedup: same keyword published within 7 days"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "grand theft auto vi",
+    "geo": "PT",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "jornal de negócios",
+    "geo": "PT",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "smart",
+    "geo": "PT",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "tamy glauser",
+    "geo": "CH",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "verkehrskontrolle",
+    "geo": "CH",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "kerenzerbergtunnel",
+    "geo": "CH",
+    "decision": "rejected",
+    "reason": "C5-sources: no named news source in feed"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "bayern",
+    "geo": "CH",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "kanada flug kind",
+    "geo": "CH",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "aeroporto internazionale di napoli",
+    "geo": "CH",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "nikolas polster",
+    "geo": "AT",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "frau",
+    "geo": "AT",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "wolfgangsee",
+    "geo": "AT",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "steuer",
+    "geo": "AT",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "amphoren",
+    "geo": "AT",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "minister",
+    "geo": "AT",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "vicepresident",
+    "geo": "BE",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ire vs afg",
+    "geo": "BE",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "jessie cave",
+    "geo": "BE",
+    "decision": "rejected",
+    "reason": "blacklist C2-gambling-adult: matched 'onlyfans'"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "sous-marin",
+    "geo": "BE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "kunsthandelaar",
+    "geo": "BE",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "economie",
+    "geo": "BE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "15 årig fundet i ungarn",
+    "geo": "DK",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "marius borg høiby",
+    "geo": "DK",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "office",
+    "geo": "DK",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "terma",
+    "geo": "DK",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "efterretningstjeneste",
+    "geo": "DK",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "østjylland",
+    "geo": "DK",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "princess",
+    "geo": "NO",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "sverre magnus av norge",
+    "geo": "NO",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "øyafestivalen",
+    "geo": "NO",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "mimir kristjansson",
+    "geo": "NO",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "e24",
+    "geo": "NO",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "sijoittaminen",
+    "geo": "FI",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "sää tampere",
+    "geo": "FI",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "stárnutí",
+    "geo": "CZ",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "singapur",
+    "geo": "CZ",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ministerstvo",
+    "geo": "CZ",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "idnes.cz",
+    "geo": "CZ",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "radiožurnál",
+    "geo": "CZ",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "tren de pasageri",
+    "geo": "RO",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "florin tănase",
+    "geo": "RO",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "atp tour masters 1000",
+    "geo": "RO",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "lucas digne",
+    "geo": "RO",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "daniel bîrligea",
+    "geo": "RO",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "amanda anisimova",
+    "geo": "RO",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "füze",
+    "geo": "TR",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ithalat",
+    "geo": "TR",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "rcd espanyol",
+    "geo": "TR",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "betplay",
+    "geo": "TR",
+    "decision": "rejected",
+    "reason": "dedup: same keyword published within 7 days"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "habib keïta",
+    "geo": "TR",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "kessie",
+    "geo": "TR",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "antrenör",
+    "geo": "TR",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "hora en chile",
+    "geo": "CL",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "codelco",
+    "geo": "CL",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "mundo",
+    "geo": "CL",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "posiciones de américa de cali contra atlético nacional",
+    "geo": "CL",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "san diego fc",
+    "geo": "CL",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "peñeteñe",
+    "geo": "CL",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "posiciones de chicago fire fc contra santos laguna",
+    "geo": "CL",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "américa - timbers",
+    "geo": "CL",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "blu radio en vivo",
+    "geo": "CO",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "dolar hoy colombia",
+    "geo": "CO",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "emma coronel",
+    "geo": "CO",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "presupuesto",
+    "geo": "CO",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "liga águila",
+    "geo": "CO",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "el iphone 18 pro max",
+    "geo": "CO",
+    "decision": "rejected",
+    "reason": "dedup: same keyword published within 7 days"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "house of the dragon",
+    "geo": "CO",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "pensión",
+    "geo": "PE",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "keiko fujimori aprobación",
+    "geo": "PE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "posiciones de club américa contra portland timbers",
+    "geo": "PE",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "catherin palomino",
+    "geo": "PE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "house of the dragon",
+    "geo": "PE",
+    "decision": "rejected",
+    "reason": "dedup: duplicate across geos, kept highest-traffic copy"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "la casa del dragon",
+    "geo": "PE",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "điểm chuẩn bưu chính viễn thông 2026",
+    "geo": "VN",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "mộ",
+    "geo": "VN",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "openai",
+    "geo": "VN",
+    "decision": "rejected",
+    "reason": "dedup: same keyword published within 7 days"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "költségvetés",
+    "geo": "HU",
+    "decision": "rejected",
+    "reason": "low-volume: 200 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "200 méteres síkfutás",
+    "geo": "HU",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "sztrájk",
+    "geo": "HU",
+    "decision": "rejected",
+    "reason": "low-volume: 100 < 500"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ramon ang gabby lopez deal",
+    "geo": "PH",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 3 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "marseille vs athletic",
+    "geo": "KE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 4 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "handofblood",
+    "geo": "DE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 5 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ireland vs afghanistan",
+    "geo": "IN",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 6 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "house of the dragon season 4",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 7 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "club américa vs portland timbers standings",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 8 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "bergrettung",
+    "geo": "AT",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 9 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "posiciones de club américa contra portland timbers",
+    "geo": "CO",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 10 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "posiciones de américa de cali contra atlético nacional",
+    "geo": "PE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 11 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "red rainfall",
+    "geo": "PH",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 12 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "jeff bezos",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 13 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "montreal canadiens",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 14 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "juve palermo",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 15 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "korea utara",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 16 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "house of the dragon",
+    "geo": "NZ",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 17 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "nigeria labour congress",
+    "geo": "NG",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 18 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "the star",
+    "geo": "KE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 19 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "quien salio de la casa de los famosos",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 20 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "brandon petersen",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 21 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "xổ số miền nam ngày 10 tháng 8",
+    "geo": "VN",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 22 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "scott eastwood",
+    "geo": "US",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 23 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "marco bezzecchi",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 24 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "fuel",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 25 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "pedro henriques",
+    "geo": "PT",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 26 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "fc basel",
+    "geo": "CH",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 27 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "prázdniny",
+    "geo": "CZ",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 28 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ösym ais",
+    "geo": "TR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 29 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "cdu",
+    "geo": "DE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 30 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "trump iran",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 31 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "zonsverduister nederland 2026",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 32 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "tarif listrik",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 33 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "destry damayanti",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 34 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "sasa kalajdzic",
+    "geo": "AT",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 35 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "tv 2 vejret",
+    "geo": "DK",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 36 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "konya cezaevinde isyan",
+    "geo": "TR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 37 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "bắt giữ",
+    "geo": "VN",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 38 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "liverpool bradley barcola transfer",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 39 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "orange warning - air quality",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 40 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "kapitän",
+    "geo": "DE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 41 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "marius borg høiby",
+    "geo": "DE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 42 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "angelo coronel",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 43 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "demissão",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 44 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "reforma tributária",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 45 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "loterie",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 46 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "meteored",
+    "geo": "ES",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 47 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "steven berghuis",
+    "geo": "NL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 48 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "areszt",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 49 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "jarosław kaczyński",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 50 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "exilio",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 51 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "lamborghini",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 52 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "cheetahs stormers currie cup match",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 53 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "special criminal court",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 54 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "mortgage fraud",
+    "geo": "NZ",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 55 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "edwin mercado",
+    "geo": "PH",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 56 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "rfa lyme bay mombasa port",
+    "geo": "KE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 57 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "odemira",
+    "geo": "PT",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 58 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "marcel sabitzer",
+    "geo": "AT",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 59 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "skatteetaten",
+    "geo": "NO",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 60 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "suvi minkkinen",
+    "geo": "FI",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 61 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "erikoisjoukot",
+    "geo": "FI",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 62 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "smartwings",
+    "geo": "CZ",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 63 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "rusia",
+    "geo": "RO",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 64 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "observator",
+    "geo": "RO",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 65 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "bac toamna 2026",
+    "geo": "RO",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 66 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "exitosa",
+    "geo": "PE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 67 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ma túy",
+    "geo": "VN",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 68 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "szélsőséges időjárás",
+    "geo": "HU",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 69 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "hadházy ákos",
+    "geo": "HU",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 70 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "sensex index",
+    "geo": "IN",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 71 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "c. joseph vijay",
+    "geo": "IN",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 72 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "veículo elétrico",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 73 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "incendiaire",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 74 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "arretrati docenti",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 75 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "air india",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 76 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "viktor gyökeres",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 77 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "uczelnia",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 78 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "radosław majewski",
+    "geo": "PL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 79 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "singapore restaurant havelock palace apologized for cooking foraged marine wildlife",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 80 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "storm",
+    "geo": "NZ",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 81 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "mahkamah",
+    "geo": "MY",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 82 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "zamfara",
+    "geo": "NG",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 83 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "schiers",
+    "geo": "CH",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 84 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "inside paradeplatz",
+    "geo": "CH",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 85 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "déchet",
+    "geo": "BE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 86 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "guillaume pley",
+    "geo": "BE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 87 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "paragliden",
+    "geo": "BE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 88 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "harry kane",
+    "geo": "DK",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 89 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "sarpsborg arbeiderblad",
+    "geo": "NO",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 90 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "afc",
+    "geo": "NO",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 91 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "kjerneinflasjon",
+    "geo": "NO",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 92 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "høyre",
+    "geo": "NO",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 93 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "yle areena",
+    "geo": "FI",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 94 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ronnie o'sullivan",
+    "geo": "FI",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 95 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "nathalie blomqvist",
+    "geo": "FI",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 96 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "helteet palaavat",
+    "geo": "FI",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 97 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "výbuch",
+    "geo": "CZ",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 98 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "antrenor",
+    "geo": "RO",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 99 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "río atmosférico",
+    "geo": "CL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 100 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "đội tuyển bóng đá u 19 quốc gia việt nam",
+    "geo": "VN",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 101 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "tội phạm",
+    "geo": "VN",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 102 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "meteorraj",
+    "geo": "HU",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 103 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "liptay lászló",
+    "geo": "HU",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 104 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "influenszer",
+    "geo": "HU",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 105 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "jamie vardy",
+    "geo": "GB",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 106 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "policier",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 107 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "calgary weather",
+    "geo": "CA",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 108 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "chantel and wyatt",
+    "geo": "AU",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 109 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "govinda advice to salman khan",
+    "geo": "IN",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 110 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "basf",
+    "geo": "DE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 111 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "fire point",
+    "geo": "DE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 112 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "seleção brasileira",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 113 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "previsão do tempo florianopolis",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 114 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "motorista",
+    "geo": "BR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 115 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "mégot",
+    "geo": "FR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 116 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "carlo calenda",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 117 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "lucumi",
+    "geo": "IT",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 118 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "vibrio",
+    "geo": "SE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 119 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "gaceta",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 120 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "quien salio de master chef",
+    "geo": "MX",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 121 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "tormenta",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 122 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "temperatura",
+    "geo": "AR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 123 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "chris murphy",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 124 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "panglima tentara nasional indonesia",
+    "geo": "ID",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 125 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "tan kiat how",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 126 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "typhoon",
+    "geo": "SG",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 127 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "langelihle phili kaizer chiefs debut",
+    "geo": "ZA",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 128 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "flight",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 129 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "cathal murray irish examiner apology",
+    "geo": "IE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 130 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "fiji search operation nz air force",
+    "geo": "NZ",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 131 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "airbus a380",
+    "geo": "NZ",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 132 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "la mesa dam",
+    "geo": "PH",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 133 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "pension",
+    "geo": "PH",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 134 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "beverly ho",
+    "geo": "PH",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 135 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "wong chen",
+    "geo": "MY",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 136 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "helicóptero",
+    "geo": "PT",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 137 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "fc basel tickets",
+    "geo": "CH",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 138 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "bayern",
+    "geo": "AT",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 139 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "mark zuckerberg",
+    "geo": "BE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 140 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "ungarn",
+    "geo": "DK",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 141 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "economic",
+    "geo": "DK",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 142 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "yle tv2",
+    "geo": "FI",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 143 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "em kisat aikataulu",
+    "geo": "FI",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 144 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "prezident",
+    "geo": "CZ",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 145 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "nhl",
+    "geo": "CZ",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 146 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "simge sağın",
+    "geo": "TR",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 147 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "millenium show",
+    "geo": "CL",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 148 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "caracol radio en vivo",
+    "geo": "CO",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 149 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "tabla de posiciones liga betplay 2026",
+    "geo": "CO",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 150 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "acaramelados serie coreana",
+    "geo": "PE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 151 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "posiciones de guayaquil city contra emelec",
+    "geo": "PE",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 152 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "bóng chuyền",
+    "geo": "VN",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 153 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "hầm",
+    "geo": "VN",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 154 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "akkumulátor",
+    "geo": "HU",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 155 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:14+00:00",
+    "keyword": "virgil van dijk",
+    "geo": "HU",
+    "decision": "rejected",
+    "reason": "skipped-capacity: non-infra rank 156 > max 2"
+  },
+  {
+    "runAt": "2026-08-10T10:37:58+00:00",
+    "keyword": "tsm stock",
+    "geo": "US",
+    "decision": "rejected",
+    "reason": "review gate: ungrounded number in text: 10,000; ungrounded number in text: 10,000"
+  },
+  {
+    "runAt": "2026-08-10T10:38:41+00:00",
+    "keyword": "enteignet wegen microsoft datenzentrum",
+    "geo": "DE",
+    "decision": "rejected",
+    "reason": "review gate: section count 2 outside [3,8]"
+  },
+  {
+    "runAt": "2026-08-10T10:39:13+00:00",
+    "keyword": "google pixel 11 pro",
+    "geo": "US",
+    "decision": "published",
+    "reason": "score 1.0 (llm)",
+    "slug": "2026-08-10-google-pixel-11-pro"
+  },
+  {
+    "runAt": "2026-08-10T10:39:49+00:00",
+    "keyword": "little league regionals 2026",
+    "geo": "US",
+    "decision": "published",
+    "reason": "score 1.0 (llm)",
+    "slug": "2026-08-10-little-league-regionals-2026"
   }
 ]
